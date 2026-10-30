@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/*
+  Theme lock: one page-level theme that follows the visitor's system setting (auto).
+  Every section reads the same tokens, so no section ever flips to the opposite mode.
+  Palette family: pure monochrome plus one saturated pop (rose red). Corners: all sharp.
+*/
+:root {
+  --bg: #f6f6f7;
+  --surface: #ebebee;
+  --ink: #15171c;
+  --muted: #4b505a;
+  --line: #c9cbd1;
+  --accent: #c72c4f;
+  --accent-ink: #ffffff;
+  --accent-text: #b0243f;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121317;
+    --surface: #1c1e23;
+    --ink: #f1f1f3;
+    --muted: #b5b9c2;
+    --line: #3a3d45;
+    --accent: #c72c4f;
+    --accent-ink: #ffffff;
+    --accent-text: #f07490;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-text: var(--accent-text);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --radius-*: initial;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

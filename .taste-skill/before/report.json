@@ -1,0 +1,3208 @@
+{
+ "url": "site/index.html",
+ "at": "2026-10-30T12:15:12.178Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    1,
+    0.95,
+    1,
+    0.99,
+    1,
+    0.53
+   ],
+   "motion": {
+    "elements": 34,
+    "css": 29,
+    "transitions": 3,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5087,
+     "screens": 5.7,
+     "words": 346,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 6,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "sj-lockup.png",
+      "crown.png",
+      "storefront.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "For all your beauty needs",
+     "words": 5,
+     "chars": 25,
+     "lines": 2,
+     "size": 96,
+     "vw": 6.7,
+     "font": "Gilda Display",
+     "weight": 400,
+     "tracking": -0.012,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.38,
+     "top": 403,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "For all your beauty needs",
+     "words": 5,
+     "lines": 2,
+     "size": 96,
+     "font": "Gilda Display"
+    },
+    "headings": [
+     {
+      "text": "Treatments",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 158,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Academy",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 267,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 376,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "For all your beauty needs",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 96,
+      "vw": 6.7,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.012,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.38,
+      "top": 403,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Book",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 484,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Nails",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1090,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Treatments",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 76,
+      "vw": 5.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 1126,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Advanced waxing",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1433,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Facials",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1522,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Brow & lash treatments",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1611,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Spray tans",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1700,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "CACI Facials",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 42,
+      "vw": 2.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1789,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "20+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 132,
+      "vw": 9.2,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 0.82,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 2185,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Learn from a qualified beauty lecturer",
+      "words": 6,
+      "chars": 38,
+      "lines": 4,
+      "size": 72,
+      "vw": 5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 2322,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Pop in or call",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 72,
+      "vw": 5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.33,
+      "top": 2879,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book your appointment",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 60,
+      "vw": 4.2,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 3906,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Choose a treatment",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.37,
+      "top": 3929,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "01509 215678",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 4140,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 4,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.66,
+       "mono": false
+      },
+      {
+       "family": "Gilda Display",
+       "share": 0.33,
+       "mono": false
+      },
+      {
+       "family": "system-ui",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      24,
+      34,
+      36,
+      42,
+      60,
+      72,
+      76,
+      96,
+      132
+     ],
+     "sizeCount": 18,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.9
+     },
+     "measureChars": 52,
+     "max": {
+      "size": 132,
+      "vw": 9.2,
+      "font": "Gilda Display",
+      "text": "+"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 11,
+     "microLabelShare": 0.059,
+     "microSamples": [
+      "What we do",
+      "Training Academy",
+      "Years inthe industry",
+      "Visit",
+      "Opening hours",
+      "Appointments"
+     ],
+     "upperShare": 0.07,
+     "centerShare": 0.09,
+     "smallText": 5
+    },
+    "eyebrows": [
+     {
+      "text": "What we do",
+      "above": "Treatments",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1068
+     },
+     {
+      "text": "Visit",
+      "above": "Pop in or call",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2823
+     },
+     {
+      "text": "Appointments",
+      "above": "Book your appointment",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3836
+     },
+     {
+      "text": "Step 1 of 3",
+      "above": "Choose a treatment",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3872
+     },
+     {
+      "text": "Call to book",
+      "above": "01509 215678",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4118
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 208
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 317
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 426
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 534
+     },
+     {
+      "text": "01",
+      "size": 12,
+      "top": 1105
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 1448
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 1537
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 1626
+     },
+     {
+      "text": "05",
+      "size": 12,
+      "top": 1715
+     },
+     {
+      "text": "06",
+      "size": 12,
+      "top": 1804
+     }
+    ],
+    "color": {
+     "bodyBg": "#1a1f2a",
+     "bodyBgHsl": {
+      "h": 221,
+      "s": 0.24,
+      "l": 0.13
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#fafbfd",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.43,
+        "l": 0.99
+       }
+      },
+      {
+       "color": "#313846",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.18,
+        "l": 0.23
+       }
+      },
+      {
+       "color": "#5a6475",
+       "top": 0,
+       "hsl": {
+        "h": 218,
+        "s": 0.13,
+        "l": 0.41
+       }
+      },
+      {
+       "color": "#eef0f4",
+       "top": 2711,
+       "hsl": {
+        "h": 220,
+        "s": 0.21,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#d1d4db",
+       "top": 2711,
+       "hsl": {
+        "h": 222,
+        "s": 0.12,
+        "l": 0.84
+       }
+      },
+      {
+       "color": "#1a1f2a",
+       "top": 4615,
+       "hsl": {
+        "h": 221,
+        "s": 0.24,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.3
+      },
+      {
+       "color": "#1a1f2a",
+       "share": 0.19
+      },
+      {
+       "color": "#d1d4db",
+       "share": 0.14
+      },
+      {
+       "color": "#e4e7ec",
+       "share": 0.12
+      },
+      {
+       "color": "#3d4452",
+       "share": 0.11
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1a1f2a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 22,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 7,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book",
+      "Call 01509 215678",
+      "Book a treatment →",
+      "Call 01509 215678"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "a.btn.btn-white → rgba(16, 20, 28, 0.45) 0px 14px 34px -12px",
+      "div#book-card.book-card → rgba(10, 14, 22, 0.6) 0px 40px 90px -30px"
+     ],
+     "gradients": 2,
+     "scrims": 2,
+     "gradientSamples": [
+      "section#top.hero → radial-gradient(130% 75% at 50% -5%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 62%), radial-gradien",
+      "div.ph → repeating-linear-gradient(135deg, rgb(238, 240, 244) 0px, rgb(238, 240, 244) 12px, rgb(232, 235, 240) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 21,
+     "hairlineSamples": [
+      "a.menu-item 1144px",
+      "a.menu-item 1144px",
+      "a.menu-item 1144px",
+      "a.menu-item 1144px",
+      "div.marquee 1440px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 2,
+     "boxRadius": 18,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 68,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "gilda display",
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5087,
+    "margins": {
+     "left": 148,
+     "right": 148
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 41,
+      "media": 2,
+      "middle": 57,
+      "heading": {
+       "text": "For all your",
+       "size": 96,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 51,
+      "textLeft": 0,
+      "textRight": 51,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#treatments.treatments",
+      "tag": "section",
+      "top": 900,
+      "height": 1117,
+      "words": 40,
+      "media": 0,
+      "middle": 355,
+      "heading": {
+       "text": "Nails",
+       "size": 42,
+       "tag": "span"
+      },
+      "left": 166,
+      "right": 148,
+      "textLeft": 166,
+      "textRight": 259,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#academy.academy",
+      "tag": "section",
+      "top": 2017,
+      "height": 693,
+      "words": 43,
+      "media": 0,
+      "middle": 449,
+      "heading": {
+       "text": "20",
+       "size": 132,
+       "tag": "span"
+      },
+      "left": 166,
+      "right": 208,
+      "textLeft": 166,
+      "textRight": 208,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.visit",
+      "tag": "section",
+      "top": 2711,
+      "height": 966,
+      "words": 41,
+      "media": 0,
+      "middle": 127,
+      "heading": null,
+      "left": 792,
+      "right": 172,
+      "textLeft": 792,
+      "textRight": 172,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#book.book",
+      "tag": "section",
+      "top": 3676,
+      "height": 938,
+      "words": 57,
+      "media": 1,
+      "middle": 189,
+      "heading": {
+       "text": "01509 215678",
+       "size": 36,
+       "tag": "span"
+      },
+      "left": 154,
+      "right": 184,
+      "textLeft": 154,
+      "textRight": 184,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4615,
+      "height": 472,
+      "words": 29,
+      "media": 0,
+      "middle": 124,
+      "heading": null,
+      "left": 148,
+      "right": 148,
+      "textLeft": 148,
+      "textRight": 148,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1860,
+      "height": 300
+     }
+    ],
+    "h1s": [
+     {
+      "text": "For all your beauty needs",
+      "size": 96,
+      "top": 403,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 154,
+      "n": 1
+     },
+     {
+      "x": 673,
+      "n": 1
+     },
+     {
+      "x": 723,
+      "n": 1
+     },
+     {
+      "x": 770,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    1,
+    0.89,
+    1,
+    0.99,
+    1,
+    0.59,
+    0.56
+   ],
+   "motion": {
+    "elements": 34,
+    "css": 29,
+    "transitions": 3,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6202,
+     "screens": 6.1,
+     "words": 346,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 6,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "sj-lockup.png",
+      "crown.png",
+      "storefront.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "For all your beauty needs",
+     "words": 5,
+     "chars": 25,
+     "lines": 2,
+     "size": 87.6,
+     "vw": 11.4,
+     "font": "Gilda Display",
+     "weight": 400,
+     "tracking": -0.012,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.65,
+     "top": 484,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "For all your beauty needs",
+     "words": 5,
+     "lines": 2,
+     "size": 87.6,
+     "font": "Gilda Display"
+    },
+    "headings": [
+     {
+      "text": "Treatments",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 76,
+      "vw": 9.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 158,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Academy",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 76,
+      "vw": 9.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 267,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 76,
+      "vw": 9.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 376,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "For all your beauty needs",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 87.6,
+      "vw": 11.4,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.012,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.65,
+      "top": 484,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Book",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 76,
+      "vw": 9.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 484,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Treatments",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 76,
+      "vw": 9.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1220,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nails",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 1357,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Advanced waxing",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 1703,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Facials",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 1792,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Brow & lash treatments",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 1881,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Spray tans",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 1970,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "CACI Facials",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 42,
+      "vw": 5.5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 2059,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Learn from a qualified beauty lecturer",
+      "words": 6,
+      "chars": 38,
+      "lines": 4,
+      "size": 69.1,
+      "vw": 9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 2504,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 132,
+      "vw": 17.2,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 0.82,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 2770,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Pop in or call",
+      "words": 4,
+      "chars": 14,
+      "lines": 2,
+      "size": 72,
+      "vw": 9.4,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.38,
+      "top": 3435,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book your appointment",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 53.5,
+      "vw": 7,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 4532,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "01509 215678",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 4755,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Choose a treatment",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 4951,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 4,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.66,
+       "mono": false
+      },
+      {
+       "family": "Gilda Display",
+       "share": 0.33,
+       "mono": false
+      },
+      {
+       "family": "system-ui",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      34,
+      36,
+      42,
+      54,
+      69,
+      72,
+      76,
+      88,
+      132
+     ],
+     "sizeCount": 18,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.9
+     },
+     "measureChars": 52,
+     "max": {
+      "size": 132,
+      "vw": 17.2,
+      "font": "Gilda Display",
+      "text": "+"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 11,
+     "microLabelShare": 0.059,
+     "microSamples": [
+      "What we do",
+      "Training Academy",
+      "Years inthe industry",
+      "Visit",
+      "Opening hours",
+      "Appointments"
+     ],
+     "upperShare": 0.07,
+     "centerShare": 0.09,
+     "smallText": 5
+    },
+    "eyebrows": [
+     {
+      "text": "What we do",
+      "above": "Treatments",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 1162
+     },
+     {
+      "text": "Visit",
+      "above": "Pop in or call",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3358
+     },
+     {
+      "text": "Appointments",
+      "above": "Book your appointment",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4466
+     },
+     {
+      "text": "Call to book",
+      "above": "01509 215678",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4733
+     },
+     {
+      "text": "Step 1 of 3",
+      "above": "Choose a treatment",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4894
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 208
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 317
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 426
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 534
+     },
+     {
+      "text": "01",
+      "size": 12,
+      "top": 1372
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 1718
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 1807
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 1896
+     },
+     {
+      "text": "05",
+      "size": 12,
+      "top": 1985
+     },
+     {
+      "text": "06",
+      "size": 12,
+      "top": 2074
+     }
+    ],
+    "color": {
+     "bodyBg": "#1a1f2a",
+     "bodyBgHsl": {
+      "h": 221,
+      "s": 0.24,
+      "l": 0.13
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#fafbfd",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.43,
+        "l": 0.99
+       }
+      },
+      {
+       "color": "#313846",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.18,
+        "l": 0.23
+       }
+      },
+      {
+       "color": "#5a6475",
+       "top": 0,
+       "hsl": {
+        "h": 218,
+        "s": 0.13,
+        "l": 0.41
+       }
+      },
+      {
+       "color": "#eef0f4",
+       "top": 3266,
+       "hsl": {
+        "h": 220,
+        "s": 0.21,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#d1d4db",
+       "top": 3266,
+       "hsl": {
+        "h": 222,
+        "s": 0.12,
+        "l": 0.84
+       }
+      },
+      {
+       "color": "#1a1f2a",
+       "top": 5615,
+       "hsl": {
+        "h": 221,
+        "s": 0.24,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.3
+      },
+      {
+       "color": "#1a1f2a",
+       "share": 0.19
+      },
+      {
+       "color": "#d1d4db",
+       "share": 0.14
+      },
+      {
+       "color": "#e4e7ec",
+       "share": 0.12
+      },
+      {
+       "color": "#3d4452",
+       "share": 0.11
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1a1f2a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 22,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 7,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book",
+      "Call 01509 215678",
+      "Book a treatment →",
+      "Call 01509 215678"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "a.btn.btn-white → rgba(16, 20, 28, 0.45) 0px 14px 34px -12px",
+      "div#book-card.book-card → rgba(10, 14, 22, 0.6) 0px 40px 90px -30px"
+     ],
+     "gradients": 2,
+     "scrims": 2,
+     "gradientSamples": [
+      "section#top.hero → radial-gradient(130% 75% at 50% -5%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 62%), radial-gradien",
+      "div.ph → repeating-linear-gradient(135deg, rgb(238, 240, 244) 0px, rgb(238, 240, 244) 12px, rgb(232, 235, 240) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 21,
+     "hairlineSamples": [
+      "a.menu-item 676px",
+      "a.menu-item 676px",
+      "a.menu-item 676px",
+      "a.menu-item 676px",
+      "div.marquee 768px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 2,
+     "boxRadius": 18,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 68,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "gilda display",
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6202,
+    "margins": {
+     "left": 44,
+     "right": 46
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1024,
+      "words": 37,
+      "media": 2,
+      "middle": 57,
+      "heading": {
+       "text": "For all your",
+       "size": 88,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 44,
+      "textLeft": 0,
+      "textRight": 44,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#treatments.treatments",
+      "tag": "section",
+      "top": 1024,
+      "height": 1226,
+      "words": 40,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Nails",
+       "size": 42,
+       "tag": "span"
+      },
+      "left": 46,
+      "right": 46,
+      "textLeft": 46,
+      "textRight": 159,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#academy.academy",
+      "tag": "section",
+      "top": 2250,
+      "height": 1016,
+      "words": 43,
+      "media": 1,
+      "middle": 9,
+      "heading": {
+       "text": "20",
+       "size": 132,
+       "tag": "span"
+      },
+      "left": 46,
+      "right": 144,
+      "textLeft": 46,
+      "textRight": 144,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.visit",
+      "tag": "section",
+      "top": 3266,
+      "height": 1062,
+      "words": 41,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 430,
+      "right": 46,
+      "textLeft": 430,
+      "textRight": 46,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#book.book",
+      "tag": "section",
+      "top": 4327,
+      "height": 1287,
+      "words": 57,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "01509 215678",
+       "size": 36,
+       "tag": "span"
+      },
+      "left": 44,
+      "right": 74,
+      "textLeft": 44,
+      "textRight": 74,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5615,
+      "height": 588,
+      "words": 29,
+      "media": 0,
+      "middle": 56,
+      "heading": null,
+      "left": 46,
+      "right": 66,
+      "textLeft": 46,
+      "textRight": 66,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "For all your beauty needs",
+      "size": 88,
+      "top": 484,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 44,
+      "n": 2
+     },
+     {
+      "x": 74,
+      "n": 1
+     },
+     {
+      "x": 96,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    1,
+    0.83,
+    1,
+    1,
+    0.96,
+    1,
+    0.57,
+    0.46
+   ],
+   "motion": {
+    "elements": 34,
+    "css": 29,
+    "transitions": 3,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6161,
+     "screens": 7.3,
+     "words": 346,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 6,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "sj-lockup.png",
+      "crown.png",
+      "storefront.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "For all your beauty needs",
+     "words": 5,
+     "chars": 25,
+     "lines": 2,
+     "size": 44.5,
+     "vw": 11.4,
+     "font": "Gilda Display",
+     "weight": 400,
+     "tracking": -0.012,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.65,
+     "top": 348,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "For all your beauty needs",
+     "words": 5,
+     "lines": 2,
+     "size": 44.5,
+     "font": "Gilda Display"
+    },
+    "headings": [
+     {
+      "text": "Treatments",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.55,
+      "top": 158,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Academy",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 232,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Visit",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 306,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "For all your beauty needs",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 44.5,
+      "vw": 11.4,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.012,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.65,
+      "top": 348,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Book",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 380,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Treatments",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 976,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nails",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 1077,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Advanced waxing",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 1590,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Facials",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 1679,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Brow & lash treatments",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 1756,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Spray tans",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 1864,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "CACI Facials",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 1953,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Learn from a qualified beauty lecturer",
+      "words": 6,
+      "chars": 38,
+      "lines": 4,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.68,
+      "top": 2266,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "20+",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 84,
+      "vw": 21.5,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 0.82,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 2429,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Pop in or call",
+      "words": 4,
+      "chars": 14,
+      "lines": 1,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3491,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book your appointment",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 4418,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "01509 215678",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 4649,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Choose a treatment",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Gilda Display",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.8,
+      "top": 4810,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 4,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.66,
+       "mono": false
+      },
+      {
+       "family": "Gilda Display",
+       "share": 0.33,
+       "mono": false
+      },
+      {
+       "family": "system-ui",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      27,
+      28,
+      40,
+      43,
+      44,
+      45,
+      84
+     ],
+     "sizeCount": 16,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17,
+      "leading": 1.65,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.9
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 84,
+      "vw": 21.5,
+      "font": "Gilda Display",
+      "text": "+"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 11,
+     "microLabelShare": 0.059,
+     "microSamples": [
+      "What we do",
+      "Training Academy",
+      "Years inthe industry",
+      "Visit",
+      "Opening hours",
+      "Appointments"
+     ],
+     "upperShare": 0.07,
+     "centerShare": 0.09,
+     "smallText": 5
+    },
+    "eyebrows": [
+     {
+      "text": "What we do",
+      "above": "Treatments",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 928
+     },
+     {
+      "text": "Training Academy",
+      "above": "Learn from a qualified beauty lecturer",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2185
+     },
+     {
+      "text": "Visit",
+      "above": "Pop in or call",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3443
+     },
+     {
+      "text": "Appointments",
+      "above": "Book your appointment",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4360
+     },
+     {
+      "text": "Call to book",
+      "above": "01509 215678",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4627
+     },
+     {
+      "text": "Step 1 of 3",
+      "above": "Choose a treatment",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 4753
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01",
+      "size": 12,
+      "top": 181
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 255
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 329
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 403
+     },
+     {
+      "text": "01",
+      "size": 12,
+      "top": 1084
+     },
+     {
+      "text": "02",
+      "size": 12,
+      "top": 1596
+     },
+     {
+      "text": "03",
+      "size": 12,
+      "top": 1685
+     },
+     {
+      "text": "04",
+      "size": 12,
+      "top": 1778
+     },
+     {
+      "text": "05",
+      "size": 12,
+      "top": 1871
+     },
+     {
+      "text": "06",
+      "size": 12,
+      "top": 1960
+     }
+    ],
+    "color": {
+     "bodyBg": "#1a1f2a",
+     "bodyBgHsl": {
+      "h": 221,
+      "s": 0.24,
+      "l": 0.13
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#fafbfd",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.43,
+        "l": 0.99
+       }
+      },
+      {
+       "color": "#313846",
+       "top": 0,
+       "hsl": {
+        "h": 220,
+        "s": 0.18,
+        "l": 0.23
+       }
+      },
+      {
+       "color": "#5a6475",
+       "top": 0,
+       "hsl": {
+        "h": 218,
+        "s": 0.13,
+        "l": 0.41
+       }
+      },
+      {
+       "color": "#eef0f4",
+       "top": 2927,
+       "hsl": {
+        "h": 220,
+        "s": 0.21,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#d1d4db",
+       "top": 2927,
+       "hsl": {
+        "h": 222,
+        "s": 0.12,
+        "l": 0.84
+       }
+      },
+      {
+       "color": "#1a1f2a",
+       "top": 5424,
+       "hsl": {
+        "h": 221,
+        "s": 0.24,
+        "l": 0.13
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.3
+      },
+      {
+       "color": "#1a1f2a",
+       "share": 0.19
+      },
+      {
+       "color": "#d1d4db",
+       "share": 0.14
+      },
+      {
+       "color": "#e4e7ec",
+       "share": 0.12
+      },
+      {
+       "color": "#3d4452",
+       "share": 0.11
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1a1f2a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 22,
+     "inHero": 4,
+     "radius": "pill",
+     "height": 46,
+     "withShadow": 7,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book",
+      "Call 01509 215678",
+      "Book a treatment →",
+      "Call 01509 215678"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 2,
+     "shadowOverlay": 1,
+     "shadowSamples": [
+      "a.btn.btn-white → rgba(16, 20, 28, 0.45) 0px 14px 34px -12px",
+      "div#book-card.book-card → rgba(10, 14, 22, 0.6) 0px 40px 90px -30px"
+     ],
+     "gradients": 2,
+     "scrims": 2,
+     "gradientSamples": [
+      "section#top.hero → radial-gradient(130% 75% at 50% -5%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 62%), radial-gradien",
+      "div.ph → repeating-linear-gradient(135deg, rgb(238, 240, 244) 0px, rgb(238, 240, 244) 12px, rgb(232, 235, 240) 12px, rg"
+     ],
+     "gradientText": 0,
+     "hairlines": 21,
+     "hairlineSamples": [
+      "a.menu-item 343px",
+      "a.menu-item 343px",
+      "a.menu-item 343px",
+      "a.menu-item 343px",
+      "div.marquee 390px"
+     ],
+     "outlinedBoxes": 1,
+     "dashed": 0,
+     "blurred": 2,
+     "roundedBoxes": 2,
+     "boxRadius": 18,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 68,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "gilda display",
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6161,
+    "margins": {
+     "left": 23,
+     "right": 23
+    },
+    "sections": [
+     {
+      "sel": "section#top.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 33,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "For all your",
+       "size": 44,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#treatments.treatments",
+      "tag": "section",
+      "top": 844,
+      "height": 1253,
+      "words": 40,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Nails",
+       "size": 27,
+       "tag": "span"
+      },
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#academy.academy",
+      "tag": "section",
+      "top": 2097,
+      "height": 830,
+      "words": 43,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "20",
+       "size": 84,
+       "tag": "span"
+      },
+      "left": 23,
+      "right": 33,
+      "textLeft": 23,
+      "textRight": 33,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.visit",
+      "tag": "section",
+      "top": 2927,
+      "height": 1345,
+      "words": 41,
+      "media": 0,
+      "middle": 7,
+      "heading": null,
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#book.book",
+      "tag": "section",
+      "top": 4272,
+      "height": 1152,
+      "words": 57,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "01509 215678",
+       "size": 28,
+       "tag": "span"
+      },
+      "left": 26,
+      "right": 28,
+      "textLeft": 26,
+      "textRight": 28,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5424,
+      "height": 737,
+      "words": 29,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 23,
+      "right": 30,
+      "textLeft": 23,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "For all your beauty needs",
+      "size": 44,
+      "top": 348,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 23,
+      "n": 2
+     },
+     {
+      "x": 40,
+      "n": 1
+     },
+     {
+      "x": 73,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Learn from a qualified beauty lecturer\" → 4 lines (6 words, 72px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "5 eyebrow/kicker label(s) above headings: \"What we do\" above \"Treatments\"; \"Visit\" above \"Pop in or call\"; \"Appointments\" above \"Book your appointment\"; \"Step 1 of 3\" above \"Choose a treatment\"; \"Call to book\" above \"01509 215678\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01\", \"02\", \"03\", \"04\", \"01\", \"02\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "11 tiny uppercase letter-spaced labels (e.g. \"What we do\", \"Training Academy\", \"Years inthe industry\", \"Visit\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "2 gradient fill(s): section#top.hero → radial-gradient(130% 75% at 50% -5%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 62%), radial-gradien | div.ph → repeating-linear-gradient(135deg, rgb(238, 240, 244) 0px, rgb(238, 240, 244) 12px, rgb(232, 235, 240) 12px, rg",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "2 box-shadow(s) on elements at rest: a.btn.btn-white → rgba(16, 20, 28, 0.45) 0px 14px 34px -12px | div#book-card.book-card → rgba(10, 14, 22, 0.6) 0px 40px 90px -30px",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "button-fx",
+   "width": 1440,
+   "message": "Buttons with shadow/glow.",
+   "fix": "Flat fill, one colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "21 thin rule(s)/divider line(s): a.menu-item 1144px | a.menu-item 1144px | a.menu-item 1144px | a.menu-item 1144px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "1 box(es) drawn with a 1px outline.",
+   "fix": "Prefer a filled surface or no box.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "glass",
+   "width": 1440,
+   "message": "2 backdrop-blur surfaces.",
+   "fix": "One blurred sticky bar at most; glass cards are a tell.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "18 different font sizes (12, 13, 14, 15, 16, 17, 18, 19, 21, 24, 34, 36, 42, 60, 72, 76, 96, 132).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "5 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "lopsided",
+   "width": 1440,
+   "message": "A section keeps its content on one side and leaves 792px of the width empty: section#visit.visit.",
+   "fix": "Fill the other side with what the section has (its picture, a second column, the figure), or defend the void in one sentence.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "covered-text",
+   "width": 1440,
+   "message": "Large text lies under another element at some scroll position: \"Treatments\" (screen 6, 100% hidden); \"Academy\" (screen 6, 100% hidden); \"Visit\" (screen 6, 100% hidden); \"Book\" (screen 6, 100% hidden)",
+   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Treatments\" (screen 5, 100% over a picture); \"Academy\" (screen 4, 100% over a picture); \"Visit\" (screen 4, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "1 headline(s) wrap past two lines at 768px: \"Learn from a qualified beauty lecturer\" → 4 lines (6 words, 69.1px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "1 headline(s) wrap past two lines at 390px: \"Learn from a qualified beauty lecturer\" → 4 lines (6 words, 40px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/claude/repo/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/home/claude/repo/.taste-skill/before/desktop-page-01.jpg",
+    "/home/claude/repo/.taste-skill/before/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/claude/repo/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/home/claude/repo/.taste-skill/before/tablet-page-01.jpg",
+    "/home/claude/repo/.taste-skill/before/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/claude/repo/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/home/claude/repo/.taste-skill/before/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
