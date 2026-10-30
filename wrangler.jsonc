@@ -1,0 +1,11 @@
+// Cloudflare Workers static-assets deploy for the Salena-Jo's site, used when the
+// build's root directory is the repo root. site/wrangler.jsonc covers a root of "site".
+// "name" must match the Worker's name in the Cloudflare dashboard.
+{
+  "name": "salena-jos-website",
+  "compatibility_date": "2025-10-01",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  }
+}
