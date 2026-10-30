@@ -6,7 +6,7 @@ import { GoodToKnow } from "@/components/GoodToKnow";
 import { Academy } from "@/components/Academy";
 import { Shopfront } from "@/components/Shopfront";
 import { Visit } from "@/components/Visit";
-import { BookingForm } from "@/components/BookingForm";
+import { BookingBox } from "@/components/BookingBox";
 import { Footer } from "@/components/Footer";
 
 // Nine sections, nine layout families, one theme. See README for the family of each section.
@@ -22,7 +22,7 @@ export default function Home() {
         <Academy />
         <Shopfront />
         <Visit />
-        <BookingForm />
+        <BookingBox />
       </main>
       <Footer />
     </>

@@ -15,7 +15,7 @@ const HOURS_ROWS = [
 // Layout family: typographic info grid. No picture: three columns of set type, the address as the display line.
 export function Visit() {
   return (
-    <section id="visit" aria-labelledby="visit-heading" className="py-24 md:py-36">
+    <section id="visit" aria-labelledby="visit-heading" className="py-14 md:py-24">
       <div className={wrap}>
         <h2 id="visit-heading" className="sr-only">
           Visit the salon
@@ -27,7 +27,7 @@ export function Visit() {
           </address>
         </Reveal>
 
-        <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-8">
+        <div className="mt-10 grid md:mt-14 grid-cols-1 gap-12 md:grid-cols-12 md:gap-8">
           <Reveal className="md:col-span-5" delay={0.06}>
             <OpenStatus />
             <dl className="mt-8 grid max-w-md grid-cols-[1fr_auto] gap-x-8 gap-y-3 text-lg">

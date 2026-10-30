@@ -21,10 +21,10 @@ export const Academy = memo(function Academy() {
   const yFront = useTransform(scrollYProgress, [0, 1], reduce ? [0, 0] : [120, -120]);
 
   return (
-    <section id="academy" ref={ref} aria-labelledby="academy-heading" className="overflow-hidden bg-surface py-24 md:py-36">
-      <div className={`${wrap} grid grid-cols-1 gap-14 md:grid-cols-12 md:gap-8`}>
+    <section id="academy" ref={ref} aria-labelledby="academy-heading" className="overflow-hidden bg-surface py-14 md:py-24">
+      <div className={`${wrap} grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8`}>
         <div className="flex flex-col justify-center md:col-span-5">
-          <p aria-hidden="true" className="text-[clamp(120px,18vw,260px)] font-bold leading-[0.8] tracking-tighter text-accent-text">
+          <p aria-hidden="true" className="text-[clamp(120px,18vw,260px)] font-bold leading-[0.8] tracking-tighter text-slate">
             20+
           </p>
           <h2 id="academy-heading" className="mt-8 text-4xl font-bold leading-[1] tracking-tighter md:text-5xl">

@@ -9,7 +9,7 @@ A single-page Next.js 15 site (App Router, Tailwind v4, Motion), exported as sta
 ## Design rules
 
 Built against taste-skill v2 (experimental). Dials: `DESIGN_VARIANCE 8`, `MOTION_INTENSITY 6`, `VISUAL_DENSITY 3`.
-One theme (auto light/dark from the visitor's system setting), one accent (`#c72c4f`), all-sharp corners.
+One theme (auto light/dark from the visitor's system setting). Neutrals come from the shopfront's slate grey (`#5a6475`) and its tints; one accent (`#c72c4f`); all-sharp corners.
 
 | Section | Layout family |
 | --- | --- |
@@ -20,7 +20,7 @@ One theme (auto light/dark from the visitor's system setting), one accent (`#c72
 | Academy | Offset collage |
 | Shopfront | Full-bleed zoom |
 | Visit | Typographic info grid |
-| Book a visit | Offset single-column form |
+| Book a visit | Booking box: treatment, date and time, details, confirm |
 | Footer | Statement footer |
 
 ## Images
@@ -32,4 +32,4 @@ The shopfront photo in `public/images/` is the client's own.
 ## Before launch
 
 - Confirm the opening hours (Wednesday to Saturday only), address and email. They came from public listings.
-- The booking form opens the visitor's email app with the request filled in. Connect a booking service (Fresha, Treatwell) if the salon wants online booking.
+- Booking follows the Potter Sanctuary flow (treatment, date and time, details, confirm). There is no booking backend yet: "Confirm & book" opens the visitor's email app with the booking filled in, and every opening-hours slot shows as available. Connect a booking service or an email/SMS endpoint to take bookings in one click with real availability.

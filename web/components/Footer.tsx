@@ -5,7 +5,7 @@ import { LABEL, wrap } from "@/lib/ui";
 // Layout family: statement footer. The way to get in touch is the display line; the rest sits small beneath.
 export function Footer() {
   return (
-    <footer className="bg-surface pt-24 pb-10 md:pt-36">
+    <footer className="bg-surface pt-14 pb-10 md:pt-24">
       <div className={wrap}>
         <Reveal>
           <a
@@ -15,7 +15,7 @@ export function Footer() {
             {LABEL.call}
           </a>
         </Reveal>
-        <div className="mt-16 grid grid-cols-1 gap-8 text-[15px] md:grid-cols-12">
+        <div className="mt-10 grid md:mt-14 grid-cols-1 gap-8 text-[15px] md:grid-cols-12">
           <p className="md:col-span-4">
             Salena-Jo&rsquo;s
             <br />

@@ -6,11 +6,15 @@
   Palette family: pure monochrome plus one saturated pop (rose red). Corners: all sharp.
 */
 :root {
-  --bg: #f6f6f7;
-  --surface: #ebebee;
-  --ink: #15171c;
-  --muted: #4b505a;
-  --line: #c9cbd1;
+  /* Neutrals are the shopfront's slate grey (#5a6475) and its tints. Rose stays the one accent. */
+  --bg: #f4f5f7;
+  --surface: #e4e7ec;
+  --surface-2: #d1d5dc;
+  --ink: #1a1f2a;
+  --muted: #5a6475;
+  --line: #a3abb9;
+  --slate: #5a6475;
+  --slate-ink: #fafafb;
   --accent: #c72c4f;
   --accent-ink: #fafafb;
   --accent-text: #b0243f;
@@ -19,11 +23,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #121317;
-    --surface: #1c1e23;
-    --ink: #f1f1f3;
-    --muted: #b5b9c2;
-    --line: #3a3d45;
+    --bg: #15181e;
+    --surface: #222731;
+    --surface-2: #2e3440;
+    --ink: #eef0f4;
+    --muted: #a3abb9;
+    --line: #5a6475;
+    --slate: #8c96a8;
+    --slate-ink: #15181e;
     --accent: #c72c4f;
     --accent-ink: #fafafb;
     --accent-text: #f07490;
@@ -33,6 +40,9 @@
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-slate: var(--slate);
+  --color-slate-ink: var(--slate-ink);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-line: var(--line);

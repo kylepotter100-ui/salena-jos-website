@@ -4,7 +4,7 @@ import { wrap } from "@/lib/ui";
 // Layout family: editorial manifesto. Type only, set large and pushed off-centre on the grid.
 export function Statement() {
   return (
-    <section aria-labelledby="statement-heading" className="py-28 md:py-40">
+    <section aria-labelledby="statement-heading" className="py-14 md:py-28">
       <div className={`${wrap} grid grid-cols-1 lg:grid-cols-12`}>
         <Reveal as="h2" className="lg:col-span-10 lg:col-start-3">
           <span
