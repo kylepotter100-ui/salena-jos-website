@@ -1,9 +1,0 @@
-// Same deploy as ../wrangler.jsonc, for a Cloudflare build whose root directory is "site".
-{
-  "name": "salena-jos-website",
-  "compatibility_date": "2025-10-01",
-  "assets": {
-    "directory": ".",
-    "not_found_handling": "404-page"
-  }
-}

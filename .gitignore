@@ -1,3 +1,4 @@
-# taste-skill working files: keep the dealt direction, drop screenshots
-.taste-skill/*
-!.taste-skill/direction.json
+# Next.js app build output
+web/node_modules
+web/.next
+web/out
