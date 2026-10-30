@@ -8,6 +8,7 @@ export function Footer() {
     <footer className="bg-surface pt-14 pb-10 md:pt-24">
       <div className={wrap}>
         <Reveal>
+          <p className="mb-3 text-2xl font-bold tracking-tight text-muted md:mb-4 md:text-3xl">Prefer to call?</p>
           <a
             href={PHONE_HREF}
             className="block text-[clamp(40px,8vw,120px)] font-bold leading-[0.9] tracking-tighter tabular-nums transition-colors duration-300 hover:text-accent-text"

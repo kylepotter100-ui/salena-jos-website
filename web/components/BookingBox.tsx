@@ -3,7 +3,7 @@
 import { memo, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { CaretLeft, CaretRight, Check, CheckCircle, WarningCircle } from "@phosphor-icons/react";
-import { CHOOSE_TREATMENT_EVENT, DAY_NAMES, EMAIL, HOURS, PHONE_DISPLAY, PHONE_HREF, TREATMENTS, formatTime } from "@/lib/site";
+import { CHOOSE_TREATMENT_EVENT, DAY_NAMES, EMAIL, HOURS, TREATMENTS, formatTime } from "@/lib/site";
 import { btnPrimary, linkUnderline, wrap } from "@/lib/ui";
 
 // Layout family: offset single-column form. A four-step booking box (treatment, date and time, details,
@@ -518,16 +518,6 @@ export const BookingBox = memo(function BookingBox() {
             )}
           </div>
 
-          <div className="mt-8 md:mt-10">
-            <p className="text-2xl font-bold tracking-tight">Prefer to call?</p>
-            <a
-              href={PHONE_HREF}
-              aria-label={`Call ${PHONE_DISPLAY}`}
-              className="mt-1 inline-block text-4xl font-bold tracking-tight tabular-nums text-slate transition-colors hover:text-accent-text md:text-5xl"
-            >
-              {PHONE_DISPLAY}
-            </a>
-          </div>
         </div>
       </div>
     </section>
