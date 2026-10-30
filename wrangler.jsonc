@@ -1,0 +1,10 @@
+// Cloudflare Workers static-assets deploy for the Salena-Jo's site.
+// "name" must match the Worker's name in the Cloudflare dashboard.
+{
+  "name": "salena-jos-website",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  }
+}
