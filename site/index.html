@@ -4,22 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#5a6475">
-  <meta name="description" content="Salena-Jo’s, 64 Ashby Road, Loughborough. Nails, advanced waxing, facials, brow and lash treatments, spray tans and CACI facials. Call 01509 215678 or book online.">
+  <meta name="description" content="Salena-Jo’s, 64 Ashby Road, Loughborough. Nails, advanced waxing, facials, brow and lash treatments, spray tans and CACI facials, plus a beauty training academy. Call 01509 215678 or book online.">
   <title>Salena-Jo’s · Nails, Beauty, Hair &amp; Training Academy · Loughborough</title>
   <link rel="icon" type="image/png" href="assets/crown-slate.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Hanken+Grotesk:wght@300..700&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Hanken+Grotesk:wght@400..700&amp;display=swap">
+  <link rel="preload" as="image" href="assets/photos/shopfront.jpg">
   <link rel="stylesheet" href="styles.css">
-  <script>
-    // Hide intro elements until main.js starts their animations (skipped for reduced motion).
-    (function () {
-      var d = document.documentElement;
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      d.classList.add('intro-pending');
-      setTimeout(function () { d.classList.remove('intro-pending'); }, 3000);
-    })();
-  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,222 +33,152 @@
 <body>
 <div class="page" id="page">
 
-  <header class="header" id="header">
-    <div class="header-inner" data-intro="fade" data-delay="150">
-      <a href="#top" data-nav="top" class="header-logo" aria-label="Salena-Jo’s home">
-        <img src="assets/crown.png" alt="" width="30" height="26">
-        <span>Salena-Jo’s</span>
-      </a>
-      <div class="header-actions">
-        <a href="#book" data-nav="book" class="header-book">Book</a>
-        <button type="button" class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
-          <span></span><span></span>
-        </button>
-      </div>
+  <!-- The shopfront fills the first screen; three framings of the same photograph crossfade slowly. -->
+  <div class="hero" id="top">
+    <div class="hero-frames" id="hero-frames">
+      <img class="hero-frame is-on" src="assets/photos/shopfront.jpg" alt="The slate-grey Salena-Jo’s shopfront at 64 Ashby Road, with the SJ crown monogram in the windows" width="1179" height="1374" fetchpriority="high">
+      <img class="hero-frame hero-frame-door" src="assets/photos/shopfront.jpg" alt="" width="1179" height="1374" aria-hidden="true">
+      <img class="hero-frame hero-frame-window" src="assets/photos/shopfront.jpg" alt="" width="1179" height="1374" aria-hidden="true">
+    </div>
+    <div class="hero-foot">
+      <p>Nails, beauty, hair and training on Ashby Road, Loughborough.</p>
+      <a href="#book" data-nav="book" class="btn btn-paper btn-block">Book a treatment</a>
+    </div>
+  </div>
+
+  <header class="rail" id="rail">
+    <div class="rail-inner">
+      <h1 class="rail-title"><a href="#top" data-nav="top">Salena-Jo’s beauty salon</a></h1>
+      <p class="rail-line">Nails, beauty, hair and training on Ashby Road, Loughborough.</p>
+      <nav class="rail-nav" aria-label="Main">
+        <a href="#treatments" data-nav="treatments" class="rail-link">Treatments</a>
+        <a href="#visit" data-nav="visit" class="rail-link">Visit</a>
+        <a href="#book" data-nav="book" class="btn btn-rail">Book</a>
+        <button type="button" class="rail-menu" id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+      </nav>
     </div>
   </header>
 
   <div class="menu" id="menu" aria-hidden="true">
-    <div class="menu-inner">
-      <nav aria-label="Main" class="menu-nav">
-        <a href="#treatments" data-nav="treatments" class="menu-item" tabindex="-1"><span class="menu-num">01</span><span class="menu-label">Treatments</span></a>
-        <a href="#academy" data-nav="academy" class="menu-item" tabindex="-1"><span class="menu-num">02</span><span class="menu-label">Academy</span></a>
-        <a href="#visit" data-nav="visit" class="menu-item" tabindex="-1"><span class="menu-num">03</span><span class="menu-label">Visit</span></a>
-        <a href="#book" data-nav="book" class="menu-item" tabindex="-1"><span class="menu-num">04</span><span class="menu-label">Book</span></a>
-      </nav>
-      <div class="menu-foot menu-item">
-        <a href="tel:+441509215678" class="menu-call" tabindex="-1">Call 01509 215678</a>
-        <p class="menu-addr">64 Ashby Road, Loughborough LE11 3AE</p>
-        <p class="menu-strap">Nails • Beauty • Hair &amp; Training Academy</p>
+    <nav class="menu-inner" aria-label="Menu">
+      <a href="#treatments" data-nav="treatments" class="menu-link" tabindex="-1">Treatments</a>
+      <a href="#academy" data-nav="academy" class="menu-link" tabindex="-1">Training academy</a>
+      <a href="#visit" data-nav="visit" class="menu-link" tabindex="-1">Visit</a>
+      <a href="#book" data-nav="book" class="menu-link" tabindex="-1">Book</a>
+      <div class="menu-foot">
+        <a href="tel:+441509215678" class="btn btn-paper" tabindex="-1">Call 01509 215678</a>
+        <p>64 Ashby Road, Loughborough LE11 3AE</p>
       </div>
-    </div>
+    </nav>
   </div>
 
+  <figure class="board">
+    <div class="board-move" data-scale>
+      <img src="assets/photos/a-board.jpg" alt="The grey A-board outside the salon listing nails, advanced waxing, facials, brow and lash treatments, spray tans and CACI facials" width="1148" height="1440" loading="lazy">
+    </div>
+  </figure>
+
   <main>
-    <section id="top" class="hero">
-      <div class="grain" aria-hidden="true"></div>
-      <div class="hero-inner">
-        <div class="hero-mark" data-intro="mark" data-delay="250" role="img" aria-label="Salena-Jo’s logo">
-          <img src="assets/sj-lockup.png" alt="" width="712" height="939">
-          <div class="hero-glint" id="glint" aria-hidden="true"></div>
-        </div>
-        <h1 class="hero-title">
-          <span class="line-mask"><span data-intro="line" data-delay="800">For all your</span></span>
-          <span class="line-mask"><span data-intro="line" data-delay="920">beauty needs</span></span>
-        </h1>
-        <p class="hero-lede" data-intro="rise" data-delay="1150">Nails, beauty, hair and our training academy. Established in Loughborough for over 20 years.</p>
-        <div class="hero-ctas" data-intro="rise" data-delay="1300">
-          <a href="#book" data-nav="book" class="btn btn-white btn-lg">Book a treatment <span aria-hidden="true">→</span></a>
-          <a href="tel:+441509215678" class="btn btn-ghost-light btn-lg tnum">Call 01509 215678</a>
-        </div>
-      </div>
-      <div class="marquee" data-intro="fade" data-delay="1500" aria-label="Treatments">
-        <div class="marquee-track" id="marquee">
-          <div class="marquee-group"><span>Nails</span><i></i><span>Advanced waxing</span><i></i><span>Facials</span><i></i><span>Brow &amp; lash treatments</span><i></i><span>Spray tans</span><i></i><span>CACI Facials</span><i></i></div>
-          <div class="marquee-group" aria-hidden="true"><span>Nails</span><i></i><span>Advanced waxing</span><i></i><span>Facials</span><i></i><span>Brow &amp; lash treatments</span><i></i><span>Spray tans</span><i></i><span>CACI Facials</span><i></i></div>
-          <div class="marquee-group" aria-hidden="true"><span>Nails</span><i></i><span>Advanced waxing</span><i></i><span>Facials</span><i></i><span>Brow &amp; lash treatments</span><i></i><span>Spray tans</span><i></i><span>CACI Facials</span><i></i></div>
-          <div class="marquee-group" aria-hidden="true"><span>Nails</span><i></i><span>Advanced waxing</span><i></i><span>Facials</span><i></i><span>Brow &amp; lash treatments</span><i></i><span>Spray tans</span><i></i><span>CACI Facials</span><i></i></div>
+    <section id="treatments" class="list">
+      <div class="wrap">
+        <h2 class="h2 list-title" data-reveal>For all your<br>beauty needs</h2>
+        <div class="list-grid">
+          <figure class="list-photo" data-reveal="img">
+            <img src="assets/photos/window-colours.jpg" alt="The right-hand window, with the SJ crown decal in front of the wall of nail colours" width="415" height="520" loading="lazy">
+          </figure>
+          <p class="list-name" data-reveal data-delay="80">Treatments</p>
+          <ul class="list-rows" data-reveal data-delay="160">
+            <li><a href="#book" data-book="nails"><span class="row-name">Nails</span><span class="row-what">Manicures, pedicures and enhancements, from a full wall of colours</span><span class="row-go">Book <span aria-hidden="true">→</span></span></a></li>
+            <li><a href="#book" data-book="waxing"><span class="row-name">Advanced waxing</span><span class="row-what">Face and body, including intimate waxing, done quickly and discreetly</span><span class="row-go">Book <span aria-hidden="true">→</span></span></a></li>
+            <li><a href="#book" data-book="facials"><span class="row-name">Facials</span><span class="row-what">Cleanse, exfoliate and hydrate, tailored to your skin on the day</span><span class="row-go">Book <span aria-hidden="true">→</span></span></a></li>
+            <li class="row-group"><a href="#book" data-book="browlash"><span class="row-name">Brows &amp; lashes</span><span class="row-what">Shaping, tints and lifts. Tints need a patch test 48 hours before</span><span class="row-go">Book <span aria-hidden="true">→</span></span></a></li>
+            <li><a href="#book" data-book="tans"><span class="row-name">Spray tans</span><span class="row-what">An even, natural tan in one short session</span><span class="row-go">Book <span aria-hidden="true">→</span></span></a></li>
+            <li><a href="#book" data-book="caci"><span class="row-name">CACI facials</span><span class="row-what">Non-surgical microcurrent toning that builds over a course</span><span class="row-go">Book <span aria-hidden="true">→</span></span></a></li>
+            <li><a href="tel:+441509215678"><span class="row-name">Hair</span><span class="row-what">Ask us what’s available when you call</span><span class="row-go">Call <span aria-hidden="true">→</span></span></a></li>
+          </ul>
+          <p class="list-foot" data-reveal data-delay="220">Pop in or call <a href="tel:+441509215678" class="tnum">01509 215678</a></p>
         </div>
       </div>
     </section>
 
-    <section id="treatments" class="treatments">
-      <div class="wrap split">
-        <div class="treatments-head">
-          <p class="eyebrow" data-reveal="up"><span class="dot"></span>What we do</p>
-          <h2 class="h2" data-reveal="wipe" data-delay="80">Treatments</h2>
-        </div>
-        <div class="acc" id="acc">
-          <!--
-            Photo slots: drop an <img src="..." alt="..."> inside any .ph element and it fills the frame
-            (the placeholder caption hides automatically).
-          -->
-          <div class="acc-item is-open" data-reveal="up" data-treatment="nails">
-            <button type="button" class="acc-btn" aria-expanded="true" aria-controls="tp-1">
-              <span class="acc-num">01</span><span class="acc-title">Nails</span><span class="acc-icon" aria-hidden="true"><span></span><span></span></span>
-            </button>
-            <div class="acc-panel" id="tp-1"><div class="acc-clip"><div class="acc-body">
-              <div class="acc-text">
-                <p>Manicures, pedicures and nail enhancements, with a full wall of colours to choose from in the salon.</p>
-                <a href="#book" class="btn btn-slate" data-book="nails">Book nails <span aria-hidden="true">→</span></a>
-              </div>
-              <div class="ph"><div class="ph-empty"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Nails photo</span></div></div>
-            </div></div></div>
-          </div>
-
-          <div class="acc-item" data-reveal="up" data-delay="50" data-treatment="waxing">
-            <button type="button" class="acc-btn" aria-expanded="false" aria-controls="tp-2">
-              <span class="acc-num">02</span><span class="acc-title">Advanced waxing</span><span class="acc-icon" aria-hidden="true"><span></span><span></span></span>
-            </button>
-            <div class="acc-panel" id="tp-2"><div class="acc-clip"><div class="acc-body">
-              <div class="acc-text">
-                <p>Face and body waxing, including intimate waxing, carried out quickly and discreetly.</p>
-                <a href="#book" class="btn btn-slate" data-book="waxing">Book waxing <span aria-hidden="true">→</span></a>
-              </div>
-              <div class="ph"><div class="ph-empty"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Treatment room photo</span></div></div>
-            </div></div></div>
-          </div>
-
-          <div class="acc-item" data-reveal="up" data-delay="100" data-treatment="facials">
-            <button type="button" class="acc-btn" aria-expanded="false" aria-controls="tp-3">
-              <span class="acc-num">03</span><span class="acc-title">Facials</span><span class="acc-icon" aria-hidden="true"><span></span><span></span></span>
-            </button>
-            <div class="acc-panel" id="tp-3"><div class="acc-clip"><div class="acc-body">
-              <div class="acc-text">
-                <p>Cleansing, exfoliating and hydrating facials, tailored to your skin on the day.</p>
-                <a href="#book" class="btn btn-slate" data-book="facials">Book a facial <span aria-hidden="true">→</span></a>
-              </div>
-              <div class="ph"><div class="ph-empty"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Facial photo</span></div></div>
-            </div></div></div>
-          </div>
-
-          <div class="acc-item" data-reveal="up" data-delay="150" data-treatment="browlash">
-            <button type="button" class="acc-btn" aria-expanded="false" aria-controls="tp-4">
-              <span class="acc-num">04</span><span class="acc-title">Brow &amp; lash treatments</span><span class="acc-icon" aria-hidden="true"><span></span><span></span></span>
-            </button>
-            <div class="acc-panel" id="tp-4"><div class="acc-clip"><div class="acc-body">
-              <div class="acc-text">
-                <p>Shaping, tinting and lifts to define brows and lashes. Tints need a patch test at least 48 hours before your first appointment.</p>
-                <a href="#book" class="btn btn-slate" data-book="browlash">Book brows &amp; lashes <span aria-hidden="true">→</span></a>
-              </div>
-              <div class="ph"><div class="ph-empty"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Brows &amp; lashes photo</span></div></div>
-            </div></div></div>
-          </div>
-
-          <div class="acc-item" data-reveal="up" data-delay="200" data-treatment="tans">
-            <button type="button" class="acc-btn" aria-expanded="false" aria-controls="tp-5">
-              <span class="acc-num">05</span><span class="acc-title">Spray tans</span><span class="acc-icon" aria-hidden="true"><span></span><span></span></span>
-            </button>
-            <div class="acc-panel" id="tp-5"><div class="acc-clip"><div class="acc-body">
-              <div class="acc-text">
-                <p>An even, natural-looking tan in one short session. We’ll tell you how to prepare beforehand.</p>
-                <a href="#book" class="btn btn-slate" data-book="tans">Book a spray tan <span aria-hidden="true">→</span></a>
-              </div>
-              <div class="ph"><div class="ph-empty"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>Spray tan photo</span></div></div>
-            </div></div></div>
-          </div>
-
-          <div class="acc-item" data-reveal="up" data-delay="250" data-treatment="caci">
-            <button type="button" class="acc-btn" aria-expanded="false" aria-controls="tp-6">
-              <span class="acc-num">06</span><span class="acc-title">CACI Facials</span><span class="acc-icon" aria-hidden="true"><span></span><span></span></span>
-            </button>
-            <div class="acc-panel" id="tp-6"><div class="acc-clip"><div class="acc-body">
-              <div class="acc-text">
-                <p>Non-surgical facial toning that uses gentle microcurrent to lift and firm. Results build over a course of treatments.</p>
-                <a href="#book" class="btn btn-slate" data-book="caci">Book CACI <span aria-hidden="true">→</span></a>
-              </div>
-              <div class="ph"><div class="ph-empty"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>CACI treatment photo</span></div></div>
-            </div></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="academy" class="academy">
-      <div class="academy-crown" aria-hidden="true"><img data-parallax="0.16" src="assets/crown.png" alt="" width="903" height="793"></div>
-      <div class="wrap split academy-split">
-        <div class="academy-head">
-          <p class="eyebrow eyebrow-muted" data-reveal="up"><span class="dot"></span>Training Academy</p>
-          <h2 class="h2 academy-title" data-reveal="wipe" data-delay="80">Learn from a qualified beauty lecturer</h2>
-        </div>
-        <div class="academy-body">
-          <div class="stat" data-reveal="up">
-            <span class="stat-num tnum"><span id="count">20</span>+</span>
-            <span class="stat-label">Years in<br>the industry</span>
-          </div>
-          <p class="academy-copy" data-reveal="up" data-delay="80">Salena-Jo is a fully qualified beauty lecturer with over 20 years in the industry. Her training academy runs from the salon on Ashby Road. Call or email to ask about upcoming courses.</p>
-          <div class="btn-row" data-reveal="up" data-delay="160">
-            <a href="tel:+441509215678" class="btn btn-white btn-md">Call 01509 215678</a>
-            <a href="mailto:salenajo7@aol.com?subject=Training%20Academy%20courses" class="btn btn-ghost-light btn-md">Email about courses</a>
+    <section id="academy" class="about">
+      <div class="wrap">
+        <h2 class="h2" data-reveal>The training academy</h2>
+        <p class="lead" data-reveal data-delay="80">Salena-Jo is a qualified beauty lecturer with over twenty years in the industry, teaching from the salon.</p>
+        <div class="about-tiles">
+          <figure class="about-photo" data-reveal="img">
+            <div class="about-photo-move" data-parallax="0.06"><img src="assets/photos/window-wide.jpg" alt="Both salon windows, with silver chairs, hanging wisteria and shelves of products behind the SJ decals" width="855" height="535" loading="lazy"></div>
+            <div class="about-note">
+              <p>Courses run from the salon. Call or email to ask what’s coming up next and when it starts.</p>
+              <p class="about-links"><a href="tel:+441509215678">Call 01509 215678</a><a href="mailto:salenajo7@aol.com?subject=Training%20Academy%20courses&amp;body=Hello%20Salena-Jo%2C%0A%0AI%27d%20like%20to%20hear%20about%20upcoming%20courses.">Email about courses</a></p>
+            </div>
+          </figure>
+          <div class="about-side">
+            <div class="about-tile" data-reveal data-delay="120">
+              <!-- The No. 64 frontage drawn as one shape; the dot marks the door. -->
+              <svg viewBox="0 0 240 200" role="img" aria-label="Drawing of the shopfront at number 64" class="elevation">
+                <path fill="currentColor" fill-rule="evenodd" d="M8 8h224v184H8zM20 22v34h200V22zM24 74v108h44V74zM82 74v74h64V74zm72 0v74h64V74z"/>
+                <circle cx="46" cy="128" r="6" class="elevation-dot"/>
+              </svg>
+              <p class="about-figure tnum"><span id="count">20</span>+ years</p>
+            </div>
+            <dl class="facts" data-reveal data-delay="200">
+              <div><dt>Experience</dt><dd>Over 20 years</dd></div>
+              <div><dt>Qualified</dt><dd>Beauty lecturer</dd></div>
+              <div><dt>Where</dt><dd>64 Ashby Road</dd></div>
+              <div><dt>Courses</dt><dd>Ask by phone or email</dd></div>
+            </dl>
           </div>
         </div>
       </div>
     </section>
 
     <section id="visit" class="visit">
-      <div class="visit-inner">
-        <div class="visit-photo" data-reveal="img">
-          <div class="visit-photo-px" data-parallax="0.08">
-            <img src="assets/storefront.jpg" alt="The Salena-Jo’s shopfront on Ashby Road, Loughborough" width="1179" height="1374" loading="lazy">
-          </div>
+      <div class="visit-photo">
+        <div class="visit-photo-move" data-parallax="0.08">
+          <img src="assets/photos/frontage-low.jpg" alt="The door at number 64 and the OPEN A-board on the pavement, between two stone planters" width="1179" height="774" loading="lazy">
         </div>
-        <div class="visit-body">
-          <p class="eyebrow" data-reveal="up"><span class="dot"></span>Visit</p>
-          <h2 class="h2 visit-title" data-reveal="wipe" data-delay="80">Pop in or call</h2>
-          <div class="status" data-reveal="up" data-delay="140">
-            <span class="status-dot" id="status-dot"></span>
-            <span id="status-text">Opening hours below</span>
+      </div>
+      <div class="visit-card-wrap">
+        <div class="visit-card" data-reveal>
+          <h2 class="card-title">Pop in or call</h2>
+          <div class="sign" id="sign" aria-live="polite">
+            <span class="sign-word" id="sign-word">Opening hours</span>
+            <span class="sign-sub" id="sign-sub">Wednesday to Saturday</span>
           </div>
-          <address class="visit-addr" data-reveal="up" data-delay="180">64 Ashby Road<br>Loughborough<br>LE11 3AE</address>
-          <div class="btn-row" data-reveal="up" data-delay="220">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=Salena-Jo%27s%2C%2064%20Ashby%20Road%2C%20Loughborough%20LE11%203AE" target="_blank" rel="noopener" class="btn btn-ink btn-sm">Get directions <span aria-hidden="true">↗</span></a>
-            <a href="tel:+441509215678" class="btn btn-outline btn-sm">Call 01509 215678</a>
-          </div>
-          <div class="hours" data-reveal="up" data-delay="260">
-            <p class="hours-label">Opening hours</p>
-            <div id="hours"></div>
-          </div>
+          <address>64 Ashby Road<br>Loughborough LE11 3AE</address>
+          <table class="hours" id="hours">
+            <caption class="sr-only">Opening hours</caption>
+            <tbody>
+              <tr data-day="3"><th scope="row">Wednesday</th><td>9:30am – 8pm</td></tr>
+              <tr data-day="4"><th scope="row">Thursday</th><td>11:30am – 8pm</td></tr>
+              <tr data-day="5"><th scope="row">Friday</th><td>9:30am – 5pm</td></tr>
+              <tr data-day="6"><th scope="row">Saturday</th><td>10am – 4pm</td></tr>
+              <tr data-day="0,1,2"><th scope="row">Sunday to Tuesday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <p class="card-links"><a href="tel:+441509215678" class="tnum">01509 215678</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Salena-Jo%27s%2C%2064%20Ashby%20Road%2C%20Loughborough%20LE11%203AE" target="_blank" rel="noopener">Directions <span aria-hidden="true">↗</span></a></p>
+          <a href="#book" data-nav="book" class="btn btn-slate btn-block card-book">Book a treatment</a>
         </div>
       </div>
     </section>
 
     <section id="book" class="book">
-      <div class="grain grain-book" aria-hidden="true"></div>
-      <div class="book-inner">
-        <div class="book-intro">
-          <p class="eyebrow eyebrow-light" data-reveal="up"><span class="dot"></span>Appointments</p>
-          <h2 class="h2 book-title" data-reveal="wipe" data-delay="80">Book your appointment</h2>
-          <p class="book-copy" data-reveal="up" data-delay="140">Choose a treatment and a time and we’ll text you to confirm. Prefer to talk it through? Give us a call.</p>
-          <a href="tel:+441509215678" class="call-card" data-reveal="up" data-delay="200">
-            <span class="call-card-text">
-              <span class="call-card-label">Call to book</span>
-              <span class="call-card-num tnum">01509 215678</span>
-            </span>
-            <span class="call-card-arrow" aria-hidden="true">→</span>
-          </a>
-        </div>
-        <div class="book-card" id="book-card" data-reveal="up" data-delay="120">
-          <noscript><p>Online booking needs JavaScript. Please call 01509 215678 to book.</p></noscript>
+      <div class="strip" aria-hidden="true">
+        <img src="assets/photos/door-64.jpg" alt="" width="390" height="300" loading="lazy" data-reveal="img">
+        <img src="assets/photos/fascia-academy.jpg" alt="" width="415" height="311" loading="lazy" data-reveal="img" data-delay="80">
+        <img src="assets/photos/window-colours.jpg" alt="" width="415" height="520" loading="lazy" data-reveal="img" data-delay="160">
+      </div>
+      <div class="band">
+        <div class="wrap band-grid">
+          <div class="band-text">
+            <h2 class="h2" data-reveal>Book an appointment</h2>
+            <p class="statement" data-reveal data-delay="80">Choose a treatment and a time and we’ll text you to confirm. Or <a href="tel:+441509215678">call 01509 215678</a> and talk it through.</p>
+            <p class="band-small" data-reveal data-delay="140">Booking requests are confirmed by text, usually the same day we’re open.<br>Tints need a patch test at least 48 hours before your first visit.</p>
+          </div>
+          <div class="book-card" id="book-card" data-reveal data-delay="120">
+            <noscript><p>Online booking needs JavaScript. Please call 01509 215678 to book.</p></noscript>
+          </div>
         </div>
       </div>
     </section>
@@ -265,44 +187,27 @@
   <footer class="footer">
     <div class="wrap footer-inner">
       <div class="footer-top">
-        <div class="footer-brand" data-reveal="up">
-          <img src="assets/sj-lockup.png" alt="Salena-Jo’s" width="112" height="148">
-          <p>Nails • Beauty • Hair &amp; Training Academy</p>
+        <img src="assets/sj-lockup.png" alt="Salena-Jo’s" width="56" height="74" class="footer-mark">
+        <div class="footer-notes">
+          <p>64 Ashby Road<br>Loughborough LE11 3AE</p>
+          <p>Wednesday to Saturday<br><a href="mailto:salenajo7@aol.com">salenajo7@aol.com</a></p>
+          <p>Nails, beauty, hair<br>and training academy</p>
         </div>
-        <div class="footer-cols" data-reveal="up" data-delay="100">
-          <div class="footer-col">
-            <p class="footer-label">Visit</p>
-            <p>64 Ashby Road<br>Loughborough LE11 3AE</p>
-          </div>
-          <div class="footer-col">
-            <p class="footer-label">Call</p>
-            <a href="tel:+441509215678" class="footer-link tnum">01509 215678</a>
-          </div>
-          <div class="footer-col">
-            <p class="footer-label">Email</p>
-            <a href="mailto:salenajo7@aol.com" class="footer-link">salenajo7@aol.com</a>
-          </div>
-        </div>
+        <a href="#top" data-nav="top" class="footer-up">Back to top <span aria-hidden="true">↑</span></a>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Salena-Jo’s</span>
-        <nav aria-label="Footer" class="footer-nav">
+      <a href="tel:+441509215678" class="footer-phone tnum" data-reveal>01509 215678</a>
+      <div class="footer-meta">
+        <nav aria-label="Footer">
           <a href="#treatments" data-nav="treatments">Treatments</a>
           <a href="#academy" data-nav="academy">Academy</a>
           <a href="#visit" data-nav="visit">Visit</a>
           <a href="#book" data-nav="book">Book</a>
         </nav>
-        <a href="#top" data-nav="top" class="footer-top-link">Back to top <span aria-hidden="true">↑</span></a>
+        <span>Photographs of the salon by Salena-Jo’s</span>
+        <span>Loughborough, <span id="year">2026</span></span>
       </div>
     </div>
   </footer>
-
-  <div class="bar" id="bar">
-    <div class="bar-inner">
-      <a href="tel:+441509215678" class="bar-call" tabindex="-1">Call</a>
-      <a href="#book" data-nav="book" class="bar-book" tabindex="-1">Book a treatment <span aria-hidden="true">→</span></a>
-    </div>
-  </div>
 
 </div>
 </body>
