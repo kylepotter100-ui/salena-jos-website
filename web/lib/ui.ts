@@ -17,7 +17,7 @@ const base =
 
 export const btnPrimary = `${base} h-12 px-6 text-[15px] bg-accent text-accent-ink hover:bg-ink hover:text-bg`;
 export const btnPrimarySmall = `${base} h-11 px-5 text-sm bg-accent text-accent-ink hover:bg-ink hover:text-bg`;
-export const btnSecondary = `${base} h-12 px-6 text-[15px] border border-ink text-ink hover:bg-ink hover:text-bg`;
+export const btnSecondary = `${base} h-12 px-6 text-[15px] border-2 border-slate text-ink hover:bg-slate hover:text-slate-ink`;
 
 export const linkUnderline =
   "font-semibold underline decoration-accent decoration-2 underline-offset-[6px] transition-colors duration-300 hover:text-accent-text";

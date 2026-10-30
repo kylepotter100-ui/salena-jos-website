@@ -112,12 +112,12 @@ export const TreatmentsPan = memo(function TreatmentsPan() {
   if (wide && !reduce) return <DesktopPan />;
 
   return (
-    <section id="treatments" aria-labelledby="treatments-heading" className="py-24 md:py-32">
+    <section id="treatments" aria-labelledby="treatments-heading" className="py-14 md:py-24">
       <div className={wrap}>
         <Intro />
       </div>
       <div
-        className="mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4 md:px-8 [scrollbar-width:none]"
+        className="mt-8 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4 md:px-8 [scrollbar-width:none]"
         role="region"
         aria-label="Treatments"
         tabIndex={0}
