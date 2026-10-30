@@ -2,10 +2,10 @@
 
 import { CHOOSE_TREATMENT_EVENT } from "@/lib/site";
 import { LABEL } from "@/lib/ui";
-import type { ReactNode } from "react";
+import { memo, type ReactNode } from "react";
 
 // Every booking link on the page uses this one label. When it names a treatment, the form preselects it.
-export function BookLink({
+export const BookLink = memo(function BookLink({
   treatment,
   className,
   children,
@@ -26,4 +26,4 @@ export function BookLink({
       {children}
     </a>
   );
-}
+});

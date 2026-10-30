@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowRight } from "@phosphor-icons/react";
@@ -10,7 +11,7 @@ import { LABEL, btnPrimary, btnSecondary, wrap } from "@/lib/ui";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 // Layout family: asymmetric split. Text left on the grid, the portrait bleeds to the right edge.
-export function Hero() {
+export const Hero = memo(function Hero() {
   const reduce = useReducedMotion();
   // The server-rendered start state is always the same; reduced motion only changes the duration to zero.
   const rise = (delay: number) => ({
@@ -61,4 +62,4 @@ export function Hero() {
       </div>
     </section>
   );
-}
+});

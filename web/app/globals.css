@@ -12,7 +12,7 @@
   --muted: #4b505a;
   --line: #c9cbd1;
   --accent: #c72c4f;
-  --accent-ink: #ffffff;
+  --accent-ink: #fafafb;
   --accent-text: #b0243f;
   color-scheme: light dark;
 }
@@ -25,7 +25,7 @@
     --muted: #b5b9c2;
     --line: #3a3d45;
     --accent: #c72c4f;
-    --accent-ink: #ffffff;
+    --accent-ink: #fafafb;
     --accent-text: #f07490;
   }
 }

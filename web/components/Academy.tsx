@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, memo } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { ArrowUpRight } from "@phosphor-icons/react";
 import { EMAIL, IMAGES } from "@/lib/site";
@@ -13,7 +13,7 @@ const coursesHref = `mailto:${EMAIL}?subject=${encodeURIComponent("Training Acad
 
 // Layout family: offset collage. A large figure and copy on the left; two pictures overlap on the right
 // and drift at different speeds to give the section depth. Stacks to one column under 768px.
-export function Academy() {
+export const Academy = memo(function Academy() {
   const reduce = useReducedMotion();
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
@@ -67,4 +67,4 @@ export function Academy() {
       </div>
     </section>
   );
-}
+});

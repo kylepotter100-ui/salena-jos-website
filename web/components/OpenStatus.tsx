@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, memo } from "react";
 import { DAY_NAMES, HOURS, formatTime } from "@/lib/site";
 
 function status(now: Date) {
@@ -18,7 +18,7 @@ function status(now: Date) {
 }
 
 // The page's one status dot: it shows real, live opening state from the hours above.
-export function OpenStatus() {
+export const OpenStatus = memo(function OpenStatus() {
   const [now, setNow] = useState<Date | null>(null);
   useEffect(() => {
     setNow(new Date());
@@ -34,5 +34,4 @@ export function OpenStatus() {
       {s.text}
     </p>
   );
-}
-
+});

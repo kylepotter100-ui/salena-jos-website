@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, memo } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { ArrowRight } from "@phosphor-icons/react";
 import { BookLink } from "./BookLink";
@@ -106,7 +106,7 @@ function DesktopPan() {
   );
 }
 
-export function TreatmentsPan() {
+export const TreatmentsPan = memo(function TreatmentsPan() {
   const wide = useWide();
   const reduce = useReducedMotion();
   if (wide && !reduce) return <DesktopPan />;
@@ -128,4 +128,4 @@ export function TreatmentsPan() {
       </div>
     </section>
   );
-}
+});

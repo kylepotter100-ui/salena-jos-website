@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, memo } from "react";
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { IMAGES } from "@/lib/site";
 import { wrap } from "@/lib/ui";
@@ -9,7 +9,7 @@ import { wrap } from "@/lib/ui";
 // Layout family: full-bleed zoom. The salon's own shopfront photo opens from a framed picture to the
 // full width as you scroll, which is the moment the page arrives at the real place. Static on phones
 // and under reduced motion.
-export function Shopfront() {
+export const Shopfront = memo(function Shopfront() {
   const reduce = useReducedMotion();
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
@@ -37,4 +37,4 @@ export function Shopfront() {
       </div>
     </section>
   );
-}
+});

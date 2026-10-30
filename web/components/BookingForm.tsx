@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { useEffect, useMemo, useState, type FormEvent, memo } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { CheckCircle, WarningCircle } from "@phosphor-icons/react";
 import { CHOOSE_TREATMENT_EVENT, DAY_NAMES, EMAIL, HOURS, PHONE_HREF, TREATMENTS } from "@/lib/site";
@@ -44,7 +44,7 @@ const errorText = "flex items-center gap-1.5 text-sm font-medium text-accent-tex
 
 // Layout family: offset single-column form. The heading leads, the form sits indented on the grid.
 // Submitting opens the visitor's email app with the request filled in, so nothing pretends to send.
-export function BookingForm() {
+export const BookingForm = memo(function BookingForm() {
   const reduce = useReducedMotion();
   const [f, setF] = useState<Fields>({ treatment: "", name: "", phone: "", day: "", time: "", notes: "" });
   const [touched, setTouched] = useState<Partial<Record<keyof Fields, boolean>>>({});
@@ -273,4 +273,4 @@ export function BookingForm() {
       </div>
     </section>
   );
-}
+});

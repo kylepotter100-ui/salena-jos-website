@@ -1,10 +1,10 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
-import type { ReactNode } from "react";
+import { memo, type ReactNode } from "react";
 
 // Rises content in as it enters the viewport, so each section reads in order. Static under reduced motion.
-export function Reveal({
+export const Reveal = memo(function Reveal({
   children,
   delay = 0,
   className,
@@ -29,4 +29,4 @@ export function Reveal({
       {children}
     </Tag>
   );
-}
+});
