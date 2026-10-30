@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#5a6475">
+  <meta name="description" content="Salena-Jo’s, 64 Ashby Road, Loughborough. Nails, advanced waxing, facials, brow and lash treatments, spray tans and CACI facials. Call 01509 215678 or book online.">
+  <title>Salena-Jo’s · Nails, Beauty, Hair &amp; Training Academy · Loughborough</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda+Display&amp;family=Hanken+Grotesk:wght@300..700&amp;display=swap">
+  <script src="./image-slot.js"></script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    body{margin:0;background:#1a1f2a;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}
+    a{color:inherit;text-decoration:none}
+    a:hover{color:inherit}
+    button,input,textarea{font:inherit;color:inherit}
+    ::selection{background:#5a6475;color:#fff}
+  </style>
+</helmet>
+<div ref="{{ rootRef }}" style="position:relative; font-family:'Hanken Grotesk', ui-sans-serif, system-ui, sans-serif; color:#1a1f2a; background-color:#fafbfd; overflow-x:clip">
+
+  <header style="position:fixed; top:0; left:0; right:0; z-index:60; padding-top:env(safe-area-inset-top); transform:{{ ui.headerTf }}; background-color:{{ ui.headerBg }}; box-shadow:{{ ui.headerShadow }}; -webkit-backdrop-filter:blur(14px) saturate(120%); backdrop-filter:blur(14px) saturate(120%); transition:transform .55s cubic-bezier(.16,1,.3,1), background-color .45s ease, box-shadow .45s ease">
+    <div data-intro="fade" data-delay="150" style="max-width:1240px; margin:0 auto; height:68px; padding:0 clamp(14px,4vw,40px); display:flex; align-items:center; justify-content:space-between; gap:12px">
+      <a href="#top" onClick="{{ nav.top }}" aria-label="Salena-Jo’s home" style="display:flex; align-items:center; gap:10px; min-height:44px; color:#fff; opacity:{{ ui.logoOp }}; transform:{{ ui.logoTf }}; transition:opacity .5s ease, transform .7s cubic-bezier(.16,1,.3,1)">
+        <img src="assets/crown.png" alt="" style="width:30px; height:auto; display:block">
+        <span style="font-family:'Gilda Display', serif; font-size:21px; line-height:1; letter-spacing:.01em">Salena-Jo’s</span>
+      </a>
+      <div style="display:flex; align-items:center; gap:8px">
+        <a href="#book" onClick="{{ nav.book }}" style="height:44px; padding:0 20px; border-radius:999px; border:1px solid rgba(255,255,255,.45); color:#fff; display:flex; align-items:center; font-size:14px; font-weight:600; letter-spacing:.05em; transition:background-color .3s ease, border-color .3s ease" style-hover="background-color:rgba(255,255,255,.12); border-color:#ffffff">Book</a>
+        <button type="button" onClick="{{ toggleMenu }}" aria-label="{{ ui.menuLabel }}" aria-expanded="{{ ui.menuOpen }}" style="position:relative; width:44px; height:44px; padding:0; border-radius:50%; border:1px solid rgba(255,255,255,.45); background-color:transparent; cursor:pointer; transition:border-color .3s ease" style-hover="border-color:#ffffff">
+          <span style="position:absolute; left:13px; right:13px; top:50%; height:1.5px; margin-top:-.75px; background-color:#fff; transform:{{ ui.burgerA }}; transition:transform .55s cubic-bezier(.16,1,.3,1)"></span>
+          <span style="position:absolute; left:13px; right:13px; top:50%; height:1.5px; margin-top:-.75px; background-color:#fff; transform:{{ ui.burgerB }}; transition:transform .55s cubic-bezier(.16,1,.3,1)"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div aria-hidden="{{ ui.menuHidden }}" style="position:fixed; inset:0; z-index:55; background-color:#313846; color:#fff; clip-path:{{ ui.menuClip }}; transition:clip-path .85s cubic-bezier(.76,0,.24,1); overflow-y:auto; overscroll-behavior:contain">
+    <div style="min-height:100%; max-width:1240px; margin:0 auto; padding:calc(104px + env(safe-area-inset-top)) clamp(22px,6vw,48px) calc(32px + env(safe-area-inset-bottom)); display:flex; flex-direction:column; gap:48px">
+      <nav aria-label="Main" style="display:flex; flex-direction:column">
+        <a href="#treatments" onClick="{{ nav.treatments }}" tabIndex="{{ ui.menuTab }}" style="display:flex; align-items:baseline; gap:18px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,.12); opacity:{{ ui.mi1.op }}; transform:{{ ui.mi1.tf }}; transition:{{ ui.mi1.tr }}">
+          <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#a3abb9">01</span>
+          <span style="font-family:'Gilda Display', serif; font-size:clamp(40px,11vw,76px); line-height:1.05">Treatments</span>
+        </a>
+        <a href="#academy" onClick="{{ nav.academy }}" tabIndex="{{ ui.menuTab }}" style="display:flex; align-items:baseline; gap:18px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,.12); opacity:{{ ui.mi2.op }}; transform:{{ ui.mi2.tf }}; transition:{{ ui.mi2.tr }}">
+          <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#a3abb9">02</span>
+          <span style="font-family:'Gilda Display', serif; font-size:clamp(40px,11vw,76px); line-height:1.05">Academy</span>
+        </a>
+        <a href="#visit" onClick="{{ nav.visit }}" tabIndex="{{ ui.menuTab }}" style="display:flex; align-items:baseline; gap:18px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,.12); opacity:{{ ui.mi3.op }}; transform:{{ ui.mi3.tf }}; transition:{{ ui.mi3.tr }}">
+          <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#a3abb9">03</span>
+          <span style="font-family:'Gilda Display', serif; font-size:clamp(40px,11vw,76px); line-height:1.05">Visit</span>
+        </a>
+        <a href="#book" onClick="{{ nav.book }}" tabIndex="{{ ui.menuTab }}" style="display:flex; align-items:baseline; gap:18px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,.12); opacity:{{ ui.mi4.op }}; transform:{{ ui.mi4.tf }}; transition:{{ ui.mi4.tr }}">
+          <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#a3abb9">04</span>
+          <span style="font-family:'Gilda Display', serif; font-size:clamp(40px,11vw,76px); line-height:1.05">Book</span>
+        </a>
+      </nav>
+      <div style="margin-top:auto; display:flex; flex-direction:column; gap:14px; opacity:{{ ui.mi5.op }}; transform:{{ ui.mi5.tf }}; transition:{{ ui.mi5.tr }}">
+        <a href="tel:+441509215678" tabIndex="{{ ui.menuTab }}" style="align-self:flex-start; height:52px; padding:0 24px; border-radius:999px; background-color:#fff; color:#1a1f2a; display:flex; align-items:center; font-size:15px; font-weight:600">Call 01509 215678</a>
+        <p style="margin:0; font-size:15px; line-height:1.6; color:#d1d4db">64 Ashby Road, Loughborough LE11 3AE</p>
+        <p style="margin:0; font-family:'Gilda Display', serif; font-size:17px; color:#a3abb9">Nails • Beauty • Hair &amp; Training Academy</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="top" data-screen-label="01 Hero" style="position:relative; min-height:100svh; display:flex; flex-direction:column; color:#fff; background-color:#5a6475; background-image:radial-gradient(130% 75% at 50% -5%, rgba(255,255,255,.15) 0%, rgba(255,255,255,0) 62%), radial-gradient(100% 60% at 50% 112%, rgba(26,31,42,.34) 0%, rgba(26,31,42,0) 70%); overflow:clip">
+    <div aria-hidden="true" style="position:absolute; inset:0; background-image:url(assets/grain.png); background-size:180px 180px; opacity:.32; mix-blend-mode:overlay; pointer-events:none"></div>
+    <div style="position:relative; flex:1; width:100%; max-width:1000px; margin:0 auto; padding:calc(88px + env(safe-area-inset-top)) clamp(22px,6vw,48px) 36px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center">
+      <div data-intro="mark" data-delay="250" role="img" aria-label="Salena-Jo’s logo" style="position:relative; width:clamp(124px,33vw,206px); aspect-ratio:712/939">
+        <img src="assets/sj-lockup.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; display:block; opacity:.9">
+        <sc-if value="{{ sheen }}" hint-placeholder-val="{{ true }}">
+          <div ref="{{ glintRef }}" aria-hidden="true" style="position:absolute; inset:0; background-image:linear-gradient(112deg, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 60%); background-size:320% 100%; background-repeat:no-repeat; background-position:150% 0; -webkit-mask-image:url(assets/sj-lockup.png); mask-image:url(assets/sj-lockup.png); -webkit-mask-size:100% 100%; mask-size:100% 100%; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat"></div>
+        </sc-if>
+      </div>
+      <h1 style="margin:clamp(24px,5vw,40px) 0 0; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(40px,11.4vw,96px); line-height:1.02; letter-spacing:-.012em">
+        <span style="display:block; overflow:hidden; padding-bottom:.08em"><span data-intro="line" data-delay="800" style="display:block">For all your</span></span>
+        <span style="display:block; overflow:hidden; padding-bottom:.08em; margin-top:-.08em"><span data-intro="line" data-delay="920" style="display:block">beauty needs</span></span>
+      </h1>
+      <p data-intro="rise" data-delay="1150" style="margin:16px 0 0; max-width:36ch; font-size:clamp(16px,2vw,19px); line-height:1.6; color:#e4e7ec; text-wrap:pretty">Nails, beauty, hair and our training academy. Established in Loughborough for over 20 years.</p>
+      <div data-intro="rise" data-delay="1300" style="margin-top:28px; width:100%; max-width:470px; display:flex; flex-wrap:wrap; gap:10px">
+        <a href="#book" onClick="{{ nav.book }}" style="flex:1 1 200px; height:56px; border-radius:999px; background-color:#fff; color:#1a1f2a; display:flex; align-items:center; justify-content:center; gap:10px; font-size:15px; font-weight:600; letter-spacing:.02em; box-shadow:0 14px 34px -12px rgba(16,20,28,.45); transition:transform .4s cubic-bezier(.16,1,.3,1), background-color .3s ease" style-hover="background-color:#eef0f4; transform:translateY(-2px)" style-active="transform:scale(.98)">Book a treatment <span aria-hidden="true">→</span></a>
+        <a href="tel:+441509215678" style="flex:1 1 200px; height:56px; border-radius:999px; border:1px solid rgba(255,255,255,.5); color:#fff; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:500; letter-spacing:.02em; font-variant-numeric:tabular-nums; transition:background-color .3s ease, border-color .3s ease, transform .4s cubic-bezier(.16,1,.3,1)" style-hover="background-color:rgba(255,255,255,.1); border-color:#ffffff" style-active="transform:scale(.98)">Call 01509 215678</a>
+      </div>
+    </div>
+    <div data-intro="fade" data-delay="1500" aria-label="Treatments" style="position:relative; border-top:1px solid rgba(255,255,255,.16); padding:17px 0 calc(17px + env(safe-area-inset-bottom)); overflow:hidden; -webkit-mask-image:linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask-image:linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent)">
+      <div ref="{{ marqueeRef }}" style="display:flex; width:max-content; font-family:'Gilda Display', serif; font-size:clamp(18px,2.2vw,24px); line-height:1.2; white-space:nowrap; color:#fff">
+        <div style="flex:none; display:flex; align-items:center; gap:26px; padding-right:26px">
+          <span>Nails</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Advanced waxing</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Facials</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Brow &amp; lash treatments</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Spray tans</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>CACI Facials</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span>
+        </div>
+        <div aria-hidden="true" style="flex:none; display:flex; align-items:center; gap:26px; padding-right:26px">
+          <span>Nails</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Advanced waxing</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Facials</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Brow &amp; lash treatments</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Spray tans</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>CACI Facials</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span>
+        </div>
+        <div aria-hidden="true" style="flex:none; display:flex; align-items:center; gap:26px; padding-right:26px">
+          <span>Nails</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Advanced waxing</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Facials</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Brow &amp; lash treatments</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Spray tans</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>CACI Facials</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span>
+        </div>
+        <div aria-hidden="true" style="flex:none; display:flex; align-items:center; gap:26px; padding-right:26px">
+          <span>Nails</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Advanced waxing</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Facials</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Brow &amp; lash treatments</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>Spray tans</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span><span>CACI Facials</span><span style="width:5px; height:5px; border-radius:50%; background-color:#d1d4db"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="treatments" data-screen-label="02 Treatments" style="background-color:#fafbfd; padding:clamp(84px,18vw,168px) 0 clamp(84px,16vw,160px)">
+    <div style="max-width:1240px; margin:0 auto; padding:0 clamp(22px,6vw,48px); display:flex; flex-wrap:wrap; gap:clamp(36px,7vw,110px)">
+      <div style="flex:1 1 280px; display:flex; flex-direction:column; gap:18px">
+        <p data-reveal="up" style="margin:0; display:flex; align-items:center; gap:12px; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:#5a6475"><span style="flex:none; width:6px; height:6px; border-radius:50%; background-color:currentColor"></span>What we do</p>
+        <h2 data-reveal="wipe" data-delay="80" style="margin:0; padding-bottom:.1em; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(44px,10vw,76px); line-height:1.02; letter-spacing:-.01em">Treatments</h2>
+      </div>
+      <div style="flex:2.2 1 520px; min-width:0; border-bottom:1px solid #d1d4db">
+
+        <div data-reveal="up" style="border-top:1px solid #d1d4db">
+          <button type="button" onClick="{{ acc.t1.toggle }}" aria-expanded="{{ acc.t1.open }}" aria-controls="tp-1" style="width:100%; min-height:88px; padding:18px 0; display:grid; grid-template-columns:42px minmax(0,1fr) 46px; align-items:center; gap:8px; border:0; background-color:transparent; text-align:left; cursor:pointer; color:#1a1f2a">
+            <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#5a6475; font-variant-numeric:tabular-nums">01</span>
+            <span style="font-family:'Gilda Display', serif; font-size:clamp(27px,6.6vw,42px); line-height:1.1">Nails</span>
+            <span aria-hidden="true" style="position:relative; width:46px; height:46px; border-radius:50%; border-width:1px; border-style:solid; border-color:{{ acc.t1.ring }}; background-color:{{ acc.t1.bg }}; transition:background-color .45s ease, border-color .45s ease">
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t1.fg }}; transition:background-color .45s ease"></span>
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t1.fg }}; transform:{{ acc.t1.rot }}; transition:transform .6s cubic-bezier(.16,1,.3,1), background-color .45s ease"></span>
+            </span>
+          </button>
+          <div id="tp-1" style="display:grid; grid-template-rows:{{ acc.t1.rows }}; transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+            <div style="min-height:0; overflow:hidden">
+              <div style="padding:0 0 34px 50px; display:flex; flex-wrap:wrap; gap:22px 32px; opacity:{{ acc.t1.op }}; transform:{{ acc.t1.tf }}; transition:opacity .55s ease .08s, transform .8s cubic-bezier(.16,1,.3,1) .08s">
+                <div style="flex:1 1 240px; display:flex; flex-direction:column; align-items:flex-start; gap:22px">
+                  <p style="margin:0; max-width:44ch; font-size:16px; line-height:1.65; color:#3d4452; text-wrap:pretty">Manicures, pedicures and nail enhancements, with a full wall of colours to choose from in the salon.</p>
+                  <a href="#book" onClick="{{ acc.t1.book }}" style="display:inline-flex; align-items:center; gap:10px; min-height:46px; padding:0 22px; border-radius:999px; background-color:#5a6475; color:#fff; font-size:14px; font-weight:600; letter-spacing:.03em; transition:background-color .3s ease" style-hover="background-color:#313846">Book nails <span aria-hidden="true">→</span></a>
+                </div>
+                <div style="flex:1 1 240px; align-self:flex-start; max-width:440px; aspect-ratio:4/3; color:#5a6475; background-image:repeating-linear-gradient(135deg, #eef0f4 0 12px, #e8ebf0 12px 24px)">
+                  <image-slot id="treat-nails" shape="rect" placeholder="Nails photo"></image-slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal="up" data-delay="50" style="border-top:1px solid #d1d4db">
+          <button type="button" onClick="{{ acc.t2.toggle }}" aria-expanded="{{ acc.t2.open }}" aria-controls="tp-2" style="width:100%; min-height:88px; padding:18px 0; display:grid; grid-template-columns:42px minmax(0,1fr) 46px; align-items:center; gap:8px; border:0; background-color:transparent; text-align:left; cursor:pointer; color:#1a1f2a">
+            <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#5a6475; font-variant-numeric:tabular-nums">02</span>
+            <span style="font-family:'Gilda Display', serif; font-size:clamp(27px,6.6vw,42px); line-height:1.1">Advanced waxing</span>
+            <span aria-hidden="true" style="position:relative; width:46px; height:46px; border-radius:50%; border-width:1px; border-style:solid; border-color:{{ acc.t2.ring }}; background-color:{{ acc.t2.bg }}; transition:background-color .45s ease, border-color .45s ease">
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t2.fg }}; transition:background-color .45s ease"></span>
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t2.fg }}; transform:{{ acc.t2.rot }}; transition:transform .6s cubic-bezier(.16,1,.3,1), background-color .45s ease"></span>
+            </span>
+          </button>
+          <div id="tp-2" style="display:grid; grid-template-rows:{{ acc.t2.rows }}; transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+            <div style="min-height:0; overflow:hidden">
+              <div style="padding:0 0 34px 50px; display:flex; flex-wrap:wrap; gap:22px 32px; opacity:{{ acc.t2.op }}; transform:{{ acc.t2.tf }}; transition:opacity .55s ease .08s, transform .8s cubic-bezier(.16,1,.3,1) .08s">
+                <div style="flex:1 1 240px; display:flex; flex-direction:column; align-items:flex-start; gap:22px">
+                  <p style="margin:0; max-width:44ch; font-size:16px; line-height:1.65; color:#3d4452; text-wrap:pretty">Face and body waxing, including intimate waxing, carried out quickly and discreetly.</p>
+                  <a href="#book" onClick="{{ acc.t2.book }}" style="display:inline-flex; align-items:center; gap:10px; min-height:46px; padding:0 22px; border-radius:999px; background-color:#5a6475; color:#fff; font-size:14px; font-weight:600; letter-spacing:.03em; transition:background-color .3s ease" style-hover="background-color:#313846">Book waxing <span aria-hidden="true">→</span></a>
+                </div>
+                <div style="flex:1 1 240px; align-self:flex-start; max-width:440px; aspect-ratio:4/3; color:#5a6475; background-image:repeating-linear-gradient(135deg, #eef0f4 0 12px, #e8ebf0 12px 24px)">
+                  <image-slot id="treat-waxing" shape="rect" placeholder="Treatment room photo"></image-slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal="up" data-delay="100" style="border-top:1px solid #d1d4db">
+          <button type="button" onClick="{{ acc.t3.toggle }}" aria-expanded="{{ acc.t3.open }}" aria-controls="tp-3" style="width:100%; min-height:88px; padding:18px 0; display:grid; grid-template-columns:42px minmax(0,1fr) 46px; align-items:center; gap:8px; border:0; background-color:transparent; text-align:left; cursor:pointer; color:#1a1f2a">
+            <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#5a6475; font-variant-numeric:tabular-nums">03</span>
+            <span style="font-family:'Gilda Display', serif; font-size:clamp(27px,6.6vw,42px); line-height:1.1">Facials</span>
+            <span aria-hidden="true" style="position:relative; width:46px; height:46px; border-radius:50%; border-width:1px; border-style:solid; border-color:{{ acc.t3.ring }}; background-color:{{ acc.t3.bg }}; transition:background-color .45s ease, border-color .45s ease">
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t3.fg }}; transition:background-color .45s ease"></span>
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t3.fg }}; transform:{{ acc.t3.rot }}; transition:transform .6s cubic-bezier(.16,1,.3,1), background-color .45s ease"></span>
+            </span>
+          </button>
+          <div id="tp-3" style="display:grid; grid-template-rows:{{ acc.t3.rows }}; transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+            <div style="min-height:0; overflow:hidden">
+              <div style="padding:0 0 34px 50px; display:flex; flex-wrap:wrap; gap:22px 32px; opacity:{{ acc.t3.op }}; transform:{{ acc.t3.tf }}; transition:opacity .55s ease .08s, transform .8s cubic-bezier(.16,1,.3,1) .08s">
+                <div style="flex:1 1 240px; display:flex; flex-direction:column; align-items:flex-start; gap:22px">
+                  <p style="margin:0; max-width:44ch; font-size:16px; line-height:1.65; color:#3d4452; text-wrap:pretty">Cleansing, exfoliating and hydrating facials, tailored to your skin on the day.</p>
+                  <a href="#book" onClick="{{ acc.t3.book }}" style="display:inline-flex; align-items:center; gap:10px; min-height:46px; padding:0 22px; border-radius:999px; background-color:#5a6475; color:#fff; font-size:14px; font-weight:600; letter-spacing:.03em; transition:background-color .3s ease" style-hover="background-color:#313846">Book a facial <span aria-hidden="true">→</span></a>
+                </div>
+                <div style="flex:1 1 240px; align-self:flex-start; max-width:440px; aspect-ratio:4/3; color:#5a6475; background-image:repeating-linear-gradient(135deg, #eef0f4 0 12px, #e8ebf0 12px 24px)">
+                  <image-slot id="treat-facials" shape="rect" placeholder="Facial photo"></image-slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal="up" data-delay="150" style="border-top:1px solid #d1d4db">
+          <button type="button" onClick="{{ acc.t4.toggle }}" aria-expanded="{{ acc.t4.open }}" aria-controls="tp-4" style="width:100%; min-height:88px; padding:18px 0; display:grid; grid-template-columns:42px minmax(0,1fr) 46px; align-items:center; gap:8px; border:0; background-color:transparent; text-align:left; cursor:pointer; color:#1a1f2a">
+            <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#5a6475; font-variant-numeric:tabular-nums">04</span>
+            <span style="font-family:'Gilda Display', serif; font-size:clamp(27px,6.6vw,42px); line-height:1.1">Brow &amp; lash treatments</span>
+            <span aria-hidden="true" style="position:relative; width:46px; height:46px; border-radius:50%; border-width:1px; border-style:solid; border-color:{{ acc.t4.ring }}; background-color:{{ acc.t4.bg }}; transition:background-color .45s ease, border-color .45s ease">
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t4.fg }}; transition:background-color .45s ease"></span>
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t4.fg }}; transform:{{ acc.t4.rot }}; transition:transform .6s cubic-bezier(.16,1,.3,1), background-color .45s ease"></span>
+            </span>
+          </button>
+          <div id="tp-4" style="display:grid; grid-template-rows:{{ acc.t4.rows }}; transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+            <div style="min-height:0; overflow:hidden">
+              <div style="padding:0 0 34px 50px; display:flex; flex-wrap:wrap; gap:22px 32px; opacity:{{ acc.t4.op }}; transform:{{ acc.t4.tf }}; transition:opacity .55s ease .08s, transform .8s cubic-bezier(.16,1,.3,1) .08s">
+                <div style="flex:1 1 240px; display:flex; flex-direction:column; align-items:flex-start; gap:22px">
+                  <p style="margin:0; max-width:44ch; font-size:16px; line-height:1.65; color:#3d4452; text-wrap:pretty">Shaping, tinting and lifts to define brows and lashes. Tints need a patch test at least 48 hours before your first appointment.</p>
+                  <a href="#book" onClick="{{ acc.t4.book }}" style="display:inline-flex; align-items:center; gap:10px; min-height:46px; padding:0 22px; border-radius:999px; background-color:#5a6475; color:#fff; font-size:14px; font-weight:600; letter-spacing:.03em; transition:background-color .3s ease" style-hover="background-color:#313846">Book brows &amp; lashes <span aria-hidden="true">→</span></a>
+                </div>
+                <div style="flex:1 1 240px; align-self:flex-start; max-width:440px; aspect-ratio:4/3; color:#5a6475; background-image:repeating-linear-gradient(135deg, #eef0f4 0 12px, #e8ebf0 12px 24px)">
+                  <image-slot id="treat-browlash" shape="rect" placeholder="Brows &amp; lashes photo"></image-slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal="up" data-delay="200" style="border-top:1px solid #d1d4db">
+          <button type="button" onClick="{{ acc.t5.toggle }}" aria-expanded="{{ acc.t5.open }}" aria-controls="tp-5" style="width:100%; min-height:88px; padding:18px 0; display:grid; grid-template-columns:42px minmax(0,1fr) 46px; align-items:center; gap:8px; border:0; background-color:transparent; text-align:left; cursor:pointer; color:#1a1f2a">
+            <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#5a6475; font-variant-numeric:tabular-nums">05</span>
+            <span style="font-family:'Gilda Display', serif; font-size:clamp(27px,6.6vw,42px); line-height:1.1">Spray tans</span>
+            <span aria-hidden="true" style="position:relative; width:46px; height:46px; border-radius:50%; border-width:1px; border-style:solid; border-color:{{ acc.t5.ring }}; background-color:{{ acc.t5.bg }}; transition:background-color .45s ease, border-color .45s ease">
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t5.fg }}; transition:background-color .45s ease"></span>
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t5.fg }}; transform:{{ acc.t5.rot }}; transition:transform .6s cubic-bezier(.16,1,.3,1), background-color .45s ease"></span>
+            </span>
+          </button>
+          <div id="tp-5" style="display:grid; grid-template-rows:{{ acc.t5.rows }}; transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+            <div style="min-height:0; overflow:hidden">
+              <div style="padding:0 0 34px 50px; display:flex; flex-wrap:wrap; gap:22px 32px; opacity:{{ acc.t5.op }}; transform:{{ acc.t5.tf }}; transition:opacity .55s ease .08s, transform .8s cubic-bezier(.16,1,.3,1) .08s">
+                <div style="flex:1 1 240px; display:flex; flex-direction:column; align-items:flex-start; gap:22px">
+                  <p style="margin:0; max-width:44ch; font-size:16px; line-height:1.65; color:#3d4452; text-wrap:pretty">An even, natural-looking tan in one short session. We’ll tell you how to prepare beforehand.</p>
+                  <a href="#book" onClick="{{ acc.t5.book }}" style="display:inline-flex; align-items:center; gap:10px; min-height:46px; padding:0 22px; border-radius:999px; background-color:#5a6475; color:#fff; font-size:14px; font-weight:600; letter-spacing:.03em; transition:background-color .3s ease" style-hover="background-color:#313846">Book a spray tan <span aria-hidden="true">→</span></a>
+                </div>
+                <div style="flex:1 1 240px; align-self:flex-start; max-width:440px; aspect-ratio:4/3; color:#5a6475; background-image:repeating-linear-gradient(135deg, #eef0f4 0 12px, #e8ebf0 12px 24px)">
+                  <image-slot id="treat-tans" shape="rect" placeholder="Spray tan photo"></image-slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-reveal="up" data-delay="250" style="border-top:1px solid #d1d4db">
+          <button type="button" onClick="{{ acc.t6.toggle }}" aria-expanded="{{ acc.t6.open }}" aria-controls="tp-6" style="width:100%; min-height:88px; padding:18px 0; display:grid; grid-template-columns:42px minmax(0,1fr) 46px; align-items:center; gap:8px; border:0; background-color:transparent; text-align:left; cursor:pointer; color:#1a1f2a">
+            <span style="font-size:12px; font-weight:600; letter-spacing:.16em; color:#5a6475; font-variant-numeric:tabular-nums">06</span>
+            <span style="font-family:'Gilda Display', serif; font-size:clamp(27px,6.6vw,42px); line-height:1.1">CACI Facials</span>
+            <span aria-hidden="true" style="position:relative; width:46px; height:46px; border-radius:50%; border-width:1px; border-style:solid; border-color:{{ acc.t6.ring }}; background-color:{{ acc.t6.bg }}; transition:background-color .45s ease, border-color .45s ease">
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t6.fg }}; transition:background-color .45s ease"></span>
+              <span style="position:absolute; left:16px; right:16px; top:50%; height:1.5px; margin-top:-.75px; background-color:{{ acc.t6.fg }}; transform:{{ acc.t6.rot }}; transition:transform .6s cubic-bezier(.16,1,.3,1), background-color .45s ease"></span>
+            </span>
+          </button>
+          <div id="tp-6" style="display:grid; grid-template-rows:{{ acc.t6.rows }}; transition:grid-template-rows .75s cubic-bezier(.16,1,.3,1)">
+            <div style="min-height:0; overflow:hidden">
+              <div style="padding:0 0 34px 50px; display:flex; flex-wrap:wrap; gap:22px 32px; opacity:{{ acc.t6.op }}; transform:{{ acc.t6.tf }}; transition:opacity .55s ease .08s, transform .8s cubic-bezier(.16,1,.3,1) .08s">
+                <div style="flex:1 1 240px; display:flex; flex-direction:column; align-items:flex-start; gap:22px">
+                  <p style="margin:0; max-width:44ch; font-size:16px; line-height:1.65; color:#3d4452; text-wrap:pretty">Non-surgical facial toning that uses gentle microcurrent to lift and firm. Results build over a course of treatments.</p>
+                  <a href="#book" onClick="{{ acc.t6.book }}" style="display:inline-flex; align-items:center; gap:10px; min-height:46px; padding:0 22px; border-radius:999px; background-color:#5a6475; color:#fff; font-size:14px; font-weight:600; letter-spacing:.03em; transition:background-color .3s ease" style-hover="background-color:#313846">Book CACI <span aria-hidden="true">→</span></a>
+                </div>
+                <div style="flex:1 1 240px; align-self:flex-start; max-width:440px; aspect-ratio:4/3; color:#5a6475; background-image:repeating-linear-gradient(135deg, #eef0f4 0 12px, #e8ebf0 12px 24px)">
+                  <image-slot id="treat-caci" shape="rect" placeholder="CACI treatment photo"></image-slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="academy" data-screen-label="03 Academy" style="position:relative; overflow:clip; background-color:#313846; color:#fff; padding:clamp(88px,18vw,168px) 0">
+    <div aria-hidden="true" style="position:absolute; right:-22%; top:4%; width:min(115vw,760px); aspect-ratio:903/793; opacity:.06; pointer-events:none">
+      <img data-parallax="0.16" src="assets/crown.png" alt="" style="width:100%; height:auto; display:block">
+    </div>
+    <div style="position:relative; max-width:1240px; margin:0 auto; padding:0 clamp(22px,6vw,48px); display:flex; flex-wrap:wrap; gap:clamp(40px,7vw,110px); align-items:flex-end">
+      <div style="flex:1 1 320px; display:flex; flex-direction:column; gap:18px">
+        <p data-reveal="up" style="margin:0; display:flex; align-items:center; gap:12px; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:#a3abb9"><span style="flex:none; width:6px; height:6px; border-radius:50%; background-color:currentColor"></span>Training Academy</p>
+        <h2 data-reveal="wipe" data-delay="80" style="margin:0; padding-bottom:.1em; max-width:12ch; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(40px,9vw,72px); line-height:1.04; letter-spacing:-.01em; text-wrap:balance">Learn from a qualified beauty lecturer</h2>
+      </div>
+      <div style="flex:1 1 320px; display:flex; flex-direction:column; gap:28px">
+        <div data-reveal="up" style="display:flex; align-items:flex-end; gap:18px; padding-bottom:26px; border-bottom:1px solid rgba(255,255,255,.16)">
+          <span style="font-family:'Gilda Display', serif; font-size:clamp(84px,20vw,132px); line-height:.82; letter-spacing:-.02em; font-variant-numeric:tabular-nums"><span ref="{{ countRef }}">20</span>+</span>
+          <span style="padding-bottom:6px; font-size:12px; font-weight:600; line-height:1.6; letter-spacing:.18em; text-transform:uppercase; color:#a3abb9">Years in<br>the industry</span>
+        </div>
+        <p data-reveal="up" data-delay="80" style="margin:0; max-width:46ch; font-size:17px; line-height:1.65; color:#d1d4db; text-wrap:pretty">Salena-Jo is a fully qualified beauty lecturer with over 20 years in the industry. Her training academy runs from the salon on Ashby Road. Call or email to ask about upcoming courses.</p>
+        <div data-reveal="up" data-delay="160" style="display:flex; flex-wrap:wrap; gap:10px">
+          <a href="tel:+441509215678" style="flex:1 1 190px; height:54px; padding:0 22px; border-radius:999px; background-color:#fff; color:#1a1f2a; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600; transition:background-color .3s ease, transform .4s cubic-bezier(.16,1,.3,1)" style-hover="background-color:#eef0f4; transform:translateY(-2px)">Call 01509 215678</a>
+          <a href="mailto:salenajo7@aol.com?subject=Training%20Academy%20courses" style="flex:1 1 190px; height:54px; padding:0 22px; border-radius:999px; border:1px solid rgba(255,255,255,.4); color:#fff; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:500; transition:background-color .3s ease, border-color .3s ease" style-hover="background-color:rgba(255,255,255,.08); border-color:#ffffff">Email about courses</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" data-screen-label="04 Visit" style="background-color:#eef0f4">
+    <div style="max-width:1240px; margin:0 auto; display:flex; flex-wrap:wrap">
+      <div data-reveal="img" style="flex:1 1 380px; position:relative; overflow:hidden; min-height:clamp(440px,118vw,760px); background-color:#d1d4db">
+        <div data-parallax="0.08" style="position:absolute; left:0; right:0; top:-12%; bottom:-12%">
+          <image-slot id="visit-storefront" shape="rect" src="assets/storefront.jpg" placeholder="Salon photo"></image-slot>
+        </div>
+      </div>
+      <div style="flex:1 1 380px; min-width:0; padding:clamp(56px,12vw,112px) clamp(22px,6vw,72px); display:flex; flex-direction:column; gap:26px">
+        <p data-reveal="up" style="margin:0; display:flex; align-items:center; gap:12px; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:#5a6475"><span style="flex:none; width:6px; height:6px; border-radius:50%; background-color:currentColor"></span>Visit</p>
+        <h2 data-reveal="wipe" data-delay="80" style="margin:-8px 0 0; padding-bottom:.1em; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(44px,10vw,72px); line-height:1.02; letter-spacing:-.01em">Pop in or call</h2>
+        <div data-reveal="up" data-delay="140" style="align-self:flex-start; display:inline-flex; align-items:center; gap:10px; min-height:38px; padding:0 16px; border-radius:999px; background-color:#fff; border:1px solid #dfe2e8; font-size:14px; font-weight:500">
+          <span style="flex:none; width:8px; height:8px; border-radius:50%; background-color:{{ status.dot }}; box-shadow:{{ status.halo }}"></span>
+          <span>{{ status.text }}</span>
+        </div>
+        <address data-reveal="up" data-delay="180" style="font-style:normal; font-size:19px; line-height:1.55">64 Ashby Road<br>Loughborough<br>LE11 3AE</address>
+        <div data-reveal="up" data-delay="220" style="display:flex; flex-wrap:wrap; gap:10px">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Salena-Jo%27s%2C%2064%20Ashby%20Road%2C%20Loughborough%20LE11%203AE" target="_blank" rel="noopener" style="flex:1 1 170px; height:52px; padding:0 20px; border-radius:999px; background-color:#1a1f2a; color:#fff; display:flex; align-items:center; justify-content:center; gap:10px; font-size:15px; font-weight:600; transition:background-color .3s ease" style-hover="background-color:#313846">Get directions <span aria-hidden="true">↗</span></a>
+          <a href="tel:+441509215678" style="flex:1 1 170px; height:52px; padding:0 20px; border-radius:999px; border:1px solid #a3abb9; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600; transition:border-color .3s ease, background-color .3s ease" style-hover="border-color:#1a1f2a; background-color:#ffffff">Call 01509 215678</a>
+        </div>
+        <div data-reveal="up" data-delay="260" style="margin-top:8px">
+          <p style="margin:0 0 6px; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:#5a6475">Opening hours</p>
+          <sc-for list="{{ hours }}" as="h" hint-placeholder-count="7">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0; border-bottom:1px solid #d1d4db; font-size:15px; font-weight:{{ h.weight }}; color:{{ h.color }}">
+              <span style="display:flex; align-items:center; gap:10px"><span style="flex:none; width:6px; height:6px; border-radius:50%; background-color:{{ h.dot }}"></span>{{ h.day }}</span>
+              <span style="font-variant-numeric:tabular-nums">{{ h.time }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" data-screen-label="05 Book" style="position:relative; overflow:clip; background-color:#5a6475; background-image:radial-gradient(120% 70% at 0% 0%, rgba(255,255,255,.12) 0%, rgba(255,255,255,0) 60%); color:#fff; padding:clamp(88px,18vw,160px) 0">
+    <div aria-hidden="true" style="position:absolute; inset:0; background-image:url(assets/grain.png); background-size:180px 180px; opacity:.28; mix-blend-mode:overlay; pointer-events:none"></div>
+    <div style="position:relative; max-width:1240px; margin:0 auto; padding:0 clamp(16px,5vw,48px); display:flex; flex-wrap:wrap; gap:clamp(36px,6vw,96px); align-items:flex-start">
+      <div style="flex:1 1 320px; min-width:0; padding:0 6px; display:flex; flex-direction:column; gap:22px">
+        <p data-reveal="up" style="margin:0; display:flex; align-items:center; gap:12px; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:#e4e7ec"><span style="flex:none; width:6px; height:6px; border-radius:50%; background-color:currentColor"></span>Appointments</p>
+        <h2 data-reveal="wipe" data-delay="80" style="margin:-4px 0 0; padding-bottom:.1em; max-width:11ch; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(40px,min(10vw,5.4vw + 12px),60px); line-height:1.02; letter-spacing:-.01em; text-wrap:balance">Book your appointment</h2>
+        <p data-reveal="up" data-delay="140" style="margin:0; max-width:40ch; font-size:17px; line-height:1.65; color:#e4e7ec; text-wrap:pretty">Choose a treatment and a time and we’ll text you to confirm. Prefer to talk it through? Give us a call.</p>
+        <a href="tel:+441509215678" data-reveal="up" data-delay="200" style="display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 18px 18px 22px; border-radius:18px; border:1px solid rgba(255,255,255,.32); background-color:rgba(255,255,255,.06); transition:background-color .3s ease, border-color .3s ease" style-hover="background-color:rgba(255,255,255,.12); border-color:rgba(255,255,255,.6)">
+          <span style="display:flex; flex-direction:column; gap:6px">
+            <span style="font-size:12px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:#e4e7ec">Call to book</span>
+            <span style="font-family:'Gilda Display', serif; font-size:clamp(28px,6.4vw,36px); line-height:1.05; font-variant-numeric:tabular-nums">01509 215678</span>
+          </span>
+          <span aria-hidden="true" style="flex:none; width:50px; height:50px; border-radius:50%; background-color:#fff; color:#1a1f2a; display:grid; place-items:center; font-size:19px">→</span>
+        </a>
+      </div>
+
+      <sc-if value="{{ showBooking }}" hint-placeholder-val="{{ true }}">
+        <div ref="{{ bookCardRef }}" data-reveal="up" data-delay="120" style="flex:1.25 1 440px; min-width:0; position:relative; background-color:#fafbfd; color:#1a1f2a; border-radius:24px; padding:clamp(20px,5vw,36px); box-shadow:0 40px 90px -30px rgba(10,14,22,.6)">
+
+          <sc-if value="{{ bk.showProgress }}" hint-placeholder-val="{{ true }}">
+            <div style="margin-bottom:26px; display:flex; flex-direction:column; gap:12px">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:#5a6475">
+                <span>{{ bk.stepLabel }}</span>
+                <span style="color:#1a1f2a">{{ bk.stepName }}</span>
+              </div>
+              <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:6px">
+                <span style="position:relative; height:3px; border-radius:3px; overflow:hidden; background-color:#e3e6eb"><span style="position:absolute; inset:0; background-color:#5a6475; transform-origin:0 50%; transform:{{ bk.p1 }}; transition:transform .8s cubic-bezier(.16,1,.3,1)"></span></span>
+                <span style="position:relative; height:3px; border-radius:3px; overflow:hidden; background-color:#e3e6eb"><span style="position:absolute; inset:0; background-color:#5a6475; transform-origin:0 50%; transform:{{ bk.p2 }}; transition:transform .8s cubic-bezier(.16,1,.3,1)"></span></span>
+                <span style="position:relative; height:3px; border-radius:3px; overflow:hidden; background-color:#e3e6eb"><span style="position:absolute; inset:0; background-color:#5a6475; transform-origin:0 50%; transform:{{ bk.p3 }}; transition:transform .8s cubic-bezier(.16,1,.3,1)"></span></span>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ bk.is1 }}" hint-placeholder-val="{{ true }}">
+            <div data-step-panel="1">
+              <h3 style="margin:0; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(28px,5.6vw,34px); line-height:1.12">Choose a treatment</h3>
+              <p style="margin:8px 0 20px; font-size:15px; line-height:1.55; color:#5a6475">Pick the closest match. You can add details at the end.</p>
+              <div role="radiogroup" aria-label="Treatment" style="display:flex; flex-direction:column; gap:8px">
+                <sc-for list="{{ bk.treatments }}" as="t" hint-placeholder-count="6">
+                  <button type="button" role="radio" aria-checked="{{ t.selected }}" onClick="{{ t.pick }}" style="display:flex; align-items:center; gap:14px; width:100%; min-height:60px; padding:12px 16px; border-radius:14px; border-width:1px; border-style:solid; border-color:{{ t.bd }}; box-shadow:{{ t.shadow }}; background-color:{{ t.bg }}; text-align:left; cursor:pointer; color:#1a1f2a; transition:background-color .3s ease, border-color .3s ease, box-shadow .3s ease, transform .3s ease" style-hover="border-color:#5a6475" style-active="transform:scale(.985)">
+                    <span style="flex:none; width:22px; height:22px; border-radius:50%; border-width:1.5px; border-style:solid; border-color:{{ t.ring }}; display:grid; place-items:center; transition:border-color .3s ease">
+                      <span style="width:10px; height:10px; border-radius:50%; background-color:#5a6475; transform:{{ t.dot }}; transition:transform .45s cubic-bezier(.34,1.56,.64,1)"></span>
+                    </span>
+                    <span style="flex:1; min-width:0; font-size:17px; font-weight:500">{{ t.name }}</span>
+                    <span aria-hidden="true" style="flex:none; font-size:18px; color:#5a6475; opacity:{{ t.arrowOp }}; transform:{{ t.arrowTf }}; transition:opacity .3s ease, transform .45s cubic-bezier(.16,1,.3,1)">→</span>
+                  </button>
+                </sc-for>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ bk.is2 }}" hint-placeholder-val="{{ false }}">
+            <div data-step-panel="2">
+              <button type="button" onClick="{{ bk.edit1 }}" style="display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; min-height:52px; padding:10px 16px; margin-bottom:22px; border-radius:14px; border:0; background-color:#eef0f4; text-align:left; cursor:pointer; transition:background-color .3s ease" style-hover="background-color:#e5e8ee">
+                <span style="font-size:15px; font-weight:600">{{ bk.selName }}</span>
+                <span style="font-size:13px; font-weight:600; letter-spacing:.04em; color:#5a6475; text-decoration:underline; text-underline-offset:3px">Change</span>
+              </button>
+              <h3 style="margin:0 0 14px; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(26px,5.4vw,32px); line-height:1.12">Choose a day</h3>
+              <div style="margin:0 calc(clamp(20px,5vw,36px) * -1); padding:4px clamp(20px,5vw,36px) 10px; display:flex; gap:8px; overflow-x:auto; scroll-snap-type:x proximity; scroll-padding:0 clamp(20px,5vw,36px); scrollbar-width:none; -webkit-overflow-scrolling:touch">
+                <sc-for list="{{ bk.days }}" as="d" hint-placeholder-count="7">
+                  <button type="button" onClick="{{ d.pick }}" disabled="{{ d.off }}" aria-pressed="{{ d.selected }}" aria-label="{{ d.aria }}" style="flex:none; scroll-snap-align:start; width:66px; height:86px; padding:0; border-radius:16px; border-width:1px; border-style:solid; border-color:{{ d.bd }}; background-color:{{ d.bg }}; color:{{ d.fg }}; opacity:{{ d.op }}; cursor:{{ d.cursor }}; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; transition:background-color .3s ease, color .3s ease, border-color .3s ease, transform .3s ease" style-active="transform:scale(.96)">
+                    <span style="font-size:11px; font-weight:600; letter-spacing:.12em; text-transform:uppercase">{{ d.wk }}</span>
+                    <span style="font-family:'Gilda Display', serif; font-size:27px; line-height:1.05">{{ d.num }}</span>
+                    <span style="font-size:11px; font-weight:500">{{ d.sub }}</span>
+                  </button>
+                </sc-for>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:4px 12px; margin:24px 0 14px">
+                <h3 style="margin:0; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(26px,5.4vw,32px); line-height:1.12">Choose a time</h3>
+                <span style="font-size:14px; color:#5a6475">{{ bk.dayLong }}</span>
+              </div>
+              <sc-for list="{{ bk.groups }}" as="g" hint-placeholder-count="2">
+                <div style="margin-bottom:18px">
+                  <p style="margin:0 0 10px; font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:#5a6475">{{ g.label }}</p>
+                  <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(92px, 1fr)); gap:8px">
+                    <sc-for list="{{ g.slots }}" as="sl" hint-placeholder-count="6">
+                      <button type="button" onClick="{{ sl.pick }}" disabled="{{ sl.off }}" aria-pressed="{{ sl.selected }}" style="height:46px; padding:0; border-radius:999px; border-width:1px; border-style:solid; border-color:{{ sl.bd }}; background-color:{{ sl.bg }}; color:{{ sl.fg }}; text-decoration:{{ sl.deco }}; cursor:{{ sl.cursor }}; font-size:15px; font-weight:500; font-variant-numeric:tabular-nums; transition:background-color .25s ease, color .25s ease, border-color .25s ease, transform .3s ease" style-active="transform:scale(.96)">{{ sl.label }}</button>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-for>
+              <div style="position:sticky; bottom:max(12px, env(safe-area-inset-bottom)); z-index:2; margin:20px -10px 0; padding:10px; display:flex; gap:10px; border-radius:999px; background-color:rgba(250,251,253,.92); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px)">
+                <button type="button" onClick="{{ bk.back1 }}" style="flex:none; height:54px; padding:0 22px; border-radius:999px; border:1px solid #d1d4db; background-color:#fff; font-size:15px; font-weight:600; cursor:pointer; transition:border-color .3s ease" style-hover="border-color:#5a6475">Back</button>
+                <button type="button" onClick="{{ bk.next2 }}" disabled="{{ bk.no2 }}" style="flex:1; height:54px; border-radius:999px; border:0; background-color:#1a1f2a; color:#fff; opacity:{{ bk.op2 }}; cursor:{{ bk.cur2 }}; font-size:16px; font-weight:600; transition:opacity .3s ease, background-color .3s ease" style-hover="background-color:#313846">{{ bk.cta2 }}</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ bk.is3 }}" hint-placeholder-val="{{ false }}">
+            <div data-step-panel="3">
+              <button type="button" onClick="{{ bk.edit2 }}" style="display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; min-height:52px; padding:10px 16px; margin-bottom:22px; border-radius:14px; border:0; background-color:#eef0f4; text-align:left; cursor:pointer; transition:background-color .3s ease" style-hover="background-color:#e5e8ee">
+                <span style="display:flex; flex-direction:column; gap:2px; min-width:0">
+                  <span style="font-size:15px; font-weight:600">{{ bk.selName }}</span>
+                  <span style="font-size:14px; color:#5a6475">{{ bk.sumWhen }}</span>
+                </span>
+                <span style="flex:none; font-size:13px; font-weight:600; letter-spacing:.04em; color:#5a6475; text-decoration:underline; text-underline-offset:3px">Change</span>
+              </button>
+              <h3 style="margin:0 0 18px; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(26px,5.4vw,32px); line-height:1.12">Your details</h3>
+              <form onSubmit="{{ f.submit }}" noValidate="{{ true }}" style="display:flex; flex-direction:column; gap:18px">
+                <label style="display:flex; flex-direction:column; gap:8px">
+                  <span style="font-size:14px; font-weight:600">Full name</span>
+                  <input type="text" name="name" autoComplete="name" value="{{ f.name }}" onChange="{{ f.onName }}" onBlur="{{ f.blurName }}" aria-invalid="{{ f.errName }}" style="width:100%; height:54px; padding:0 16px; border-radius:12px; border-width:1px; border-style:solid; border-color:{{ f.bdName }}; background-color:#fff; font-size:16px; color:#1a1f2a; outline:none; transition:border-color .2s ease, box-shadow .2s ease" style-focus="border-color:#5a6475; box-shadow:0 0 0 4px rgba(90,100,117,.16)">
+                  <sc-if value="{{ f.errName }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:13px; color:#a8404a">{{ f.msgName }}</span></sc-if>
+                </label>
+                <label style="display:flex; flex-direction:column; gap:8px">
+                  <span style="font-size:14px; font-weight:600">Mobile number</span>
+                  <input type="tel" name="tel" inputMode="tel" autoComplete="tel" placeholder="07700 900123" value="{{ f.phone }}" onChange="{{ f.onPhone }}" onBlur="{{ f.blurPhone }}" aria-invalid="{{ f.errPhone }}" style="width:100%; height:54px; padding:0 16px; border-radius:12px; border-width:1px; border-style:solid; border-color:{{ f.bdPhone }}; background-color:#fff; font-size:16px; color:#1a1f2a; font-variant-numeric:tabular-nums; outline:none; transition:border-color .2s ease, box-shadow .2s ease" style-focus="border-color:#5a6475; box-shadow:0 0 0 4px rgba(90,100,117,.16)">
+                  <sc-if value="{{ f.errPhone }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:13px; color:#a8404a">{{ f.msgPhone }}</span></sc-if>
+                </label>
+                <label style="display:flex; flex-direction:column; gap:8px">
+                  <span style="font-size:14px; font-weight:600">Email <span style="font-weight:400; color:#5a6475">(optional)</span></span>
+                  <input type="email" name="email" inputMode="email" autoComplete="email" value="{{ f.email }}" onChange="{{ f.onEmail }}" onBlur="{{ f.blurEmail }}" aria-invalid="{{ f.errEmail }}" style="width:100%; height:54px; padding:0 16px; border-radius:12px; border-width:1px; border-style:solid; border-color:{{ f.bdEmail }}; background-color:#fff; font-size:16px; color:#1a1f2a; outline:none; transition:border-color .2s ease, box-shadow .2s ease" style-focus="border-color:#5a6475; box-shadow:0 0 0 4px rgba(90,100,117,.16)">
+                  <sc-if value="{{ f.errEmail }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:13px; color:#a8404a">{{ f.msgEmail }}</span></sc-if>
+                </label>
+                <label style="display:flex; flex-direction:column; gap:8px">
+                  <span style="font-size:14px; font-weight:600">Anything we should know? <span style="font-weight:400; color:#5a6475">(optional)</span></span>
+                  <textarea name="notes" rows="3" placeholder="For example, gel removal or a colour in mind" value="{{ f.notes }}" onChange="{{ f.onNotes }}" style="width:100%; padding:14px 16px; border-radius:12px; border:1px solid #d5d9e0; background-color:#fff; font-size:16px; line-height:1.5; color:#1a1f2a; resize:vertical; outline:none; transition:border-color .2s ease, box-shadow .2s ease" style-focus="border-color:#5a6475; box-shadow:0 0 0 4px rgba(90,100,117,.16)"></textarea>
+                </label>
+                <label style="position:relative; display:flex; align-items:center; gap:12px; min-height:44px; cursor:pointer; font-size:15px">
+                  <input type="checkbox" checked="{{ f.first }}" onChange="{{ f.onFirst }}" style="position:absolute; left:0; top:50%; width:1px; height:1px; opacity:0; pointer-events:none">
+                  <span aria-hidden="true" style="flex:none; width:24px; height:24px; border-radius:7px; border-width:1.5px; border-style:solid; border-color:{{ f.firstBd }}; background-color:{{ f.firstBg }}; display:grid; place-items:center; transition:background-color .25s ease, border-color .25s ease">
+                    <span style="width:11px; height:6px; margin-top:-3px; border-left:2px solid #fff; border-bottom:2px solid #fff; transform:{{ f.tickTf }}; transition:transform .35s cubic-bezier(.34,1.56,.64,1)"></span>
+                  </span>
+                  <span>This is my first visit</span>
+                </label>
+                <sc-if value="{{ f.patch }}" hint-placeholder-val="{{ false }}">
+                  <p style="margin:0; padding:14px 16px; border-radius:12px; background-color:#eef0f4; font-size:14px; line-height:1.55; color:#3d4452">Tints need a patch test at least 48 hours before your first appointment. We’ll arrange this when we confirm.</p>
+                </sc-if>
+                <button type="submit" disabled="{{ f.sending }}" style="margin-top:4px; height:58px; border-radius:999px; border:0; background-color:#1a1f2a; color:#fff; display:flex; align-items:center; justify-content:center; gap:12px; font-size:16px; font-weight:600; letter-spacing:.01em; cursor:pointer; transition:background-color .3s ease, transform .3s ease" style-hover="background-color:#313846" style-active="transform:scale(.985)">
+                  <sc-if value="{{ f.sending }}" hint-placeholder-val="{{ false }}">{{ spinner }}</sc-if>
+                  <span>{{ f.submitLabel }}</span>
+                </button>
+                <div style="display:flex; align-items:center; justify-content:space-between; gap:12px">
+                  <button type="button" onClick="{{ bk.back2 }}" style="min-height:44px; padding:0; border:0; background-color:transparent; font-size:14px; font-weight:600; color:#5a6475; cursor:pointer">← Back</button>
+                  <span style="font-size:13px; color:#5a6475; text-align:right">We only use your details to arrange this visit.</span>
+                </div>
+              </form>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ bk.isDone }}" hint-placeholder-val="{{ false }}">
+            <div data-step-panel="done" style="display:flex; flex-direction:column; align-items:center; text-align:center; padding:8px 0 0">
+              <img data-pop="" src="assets/crown-slate.png" alt="" style="width:78px; height:auto; display:block">
+              <h3 style="margin:22px 0 0; font-family:'Gilda Display', serif; font-weight:400; font-size:clamp(30px,6vw,38px); line-height:1.1">Request sent</h3>
+              <p style="margin:12px 0 0; max-width:38ch; font-size:16px; line-height:1.6; color:#3d4452; text-wrap:pretty">{{ bk.doneText }}</p>
+              <div style="width:100%; margin-top:26px; border-top:1px solid #e3e6eb; text-align:left">
+                <div style="display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid #e3e6eb; font-size:15px"><span style="color:#5a6475">Treatment</span><span style="font-weight:600; text-align:right">{{ bk.selName }}</span></div>
+                <div style="display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid #e3e6eb; font-size:15px"><span style="color:#5a6475">When</span><span style="font-weight:600; text-align:right">{{ bk.sumWhen }}</span></div>
+                <div style="display:flex; justify-content:space-between; gap:16px; padding:14px 0; border-bottom:1px solid #e3e6eb; font-size:15px"><span style="color:#5a6475">Where</span><span style="font-weight:600; text-align:right">64 Ashby Road, Loughborough</span></div>
+              </div>
+              <div style="width:100%; margin-top:22px; display:flex; flex-wrap:wrap; gap:10px">
+                <button type="button" onClick="{{ bk.ics }}" style="flex:1 1 180px; height:54px; border-radius:999px; border:0; background-color:#1a1f2a; color:#fff; font-size:15px; font-weight:600; cursor:pointer; transition:background-color .3s ease" style-hover="background-color:#313846">Add to calendar</button>
+                <a href="tel:+441509215678" style="flex:1 1 180px; height:54px; border-radius:999px; border:1px solid #d1d4db; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:600; transition:border-color .3s ease" style-hover="border-color:#5a6475">Call 01509 215678</a>
+              </div>
+              <button type="button" onClick="{{ bk.reset }}" style="margin-top:14px; min-height:44px; padding:0 12px; border:0; background-color:transparent; font-size:14px; font-weight:600; color:#5a6475; text-decoration:underline; text-underline-offset:4px; cursor:pointer">Make another booking</button>
+            </div>
+          </sc-if>
+
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <footer data-screen-label="06 Footer" style="background-color:#1a1f2a; color:#fff; padding:clamp(72px,14vw,120px) 0 calc(32px + env(safe-area-inset-bottom))">
+    <div style="max-width:1240px; margin:0 auto; padding:0 clamp(22px,6vw,48px); display:flex; flex-direction:column; gap:56px">
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:48px">
+        <div data-reveal="up" style="display:flex; flex-direction:column; align-items:flex-start; gap:22px">
+          <img src="assets/sj-lockup.png" alt="Salena-Jo’s" style="width:112px; height:auto; display:block">
+          <p style="margin:0; font-family:'Gilda Display', serif; font-size:18px; line-height:1.4; color:#d1d4db">Nails • Beauty • Hair &amp; Training Academy</p>
+        </div>
+        <div data-reveal="up" data-delay="100" style="display:flex; flex-wrap:wrap; gap:36px 56px">
+          <div style="display:flex; flex-direction:column; gap:10px">
+            <p style="margin:0; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:#a3abb9">Visit</p>
+            <p style="margin:0; font-size:16px; line-height:1.6">64 Ashby Road<br>Loughborough LE11 3AE</p>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:10px">
+            <p style="margin:0; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:#a3abb9">Call</p>
+            <a href="tel:+441509215678" style="font-size:16px; line-height:1.6; font-variant-numeric:tabular-nums; text-decoration:underline; text-decoration-color:rgba(255,255,255,.3); text-underline-offset:4px" style-hover="text-decoration-color:#ffffff">01509 215678</a>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:10px">
+            <p style="margin:0; font-size:12px; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:#a3abb9">Email</p>
+            <a href="mailto:salenajo7@aol.com" style="font-size:16px; line-height:1.6; text-decoration:underline; text-decoration-color:rgba(255,255,255,.3); text-underline-offset:4px" style-hover="text-decoration-color:#ffffff">salenajo7@aol.com</a>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px 28px; padding-top:24px; border-top:1px solid rgba(255,255,255,.12); font-size:14px; color:#a3abb9">
+        <span>© 2026 Salena-Jo’s</span>
+        <nav aria-label="Footer" style="display:flex; flex-wrap:wrap; gap:4px 22px">
+          <a href="#treatments" onClick="{{ nav.treatments }}" style="min-height:44px; display:flex; align-items:center; transition:color .3s ease" style-hover="color:#ffffff">Treatments</a>
+          <a href="#academy" onClick="{{ nav.academy }}" style="min-height:44px; display:flex; align-items:center; transition:color .3s ease" style-hover="color:#ffffff">Academy</a>
+          <a href="#visit" onClick="{{ nav.visit }}" style="min-height:44px; display:flex; align-items:center; transition:color .3s ease" style-hover="color:#ffffff">Visit</a>
+          <a href="#book" onClick="{{ nav.book }}" style="min-height:44px; display:flex; align-items:center; transition:color .3s ease" style-hover="color:#ffffff">Book</a>
+        </nav>
+        <a href="#top" onClick="{{ nav.top }}" style="min-height:44px; display:flex; align-items:center; gap:8px; transition:color .3s ease" style-hover="color:#ffffff">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <div style="position:fixed; left:0; right:0; bottom:0; z-index:50; padding:0 12px max(12px, env(safe-area-inset-bottom)); display:flex; justify-content:center; pointer-events:none; transform:{{ ui.barTf }}; opacity:{{ ui.barOp }}; transition:transform .65s cubic-bezier(.16,1,.3,1), opacity .4s ease">
+    <div style="pointer-events:auto; width:100%; max-width:440px; display:flex; gap:8px; padding:8px; border-radius:999px; background-color:rgba(26,31,42,.84); -webkit-backdrop-filter:blur(16px) saturate(140%); backdrop-filter:blur(16px) saturate(140%); box-shadow:0 16px 40px -12px rgba(10,14,22,.5)">
+      <a href="tel:+441509215678" tabIndex="{{ ui.barTab }}" style="flex:none; height:48px; padding:0 22px; border-radius:999px; border:1px solid rgba(255,255,255,.3); color:#fff; display:flex; align-items:center; font-size:15px; font-weight:600; transition:border-color .3s ease" style-hover="border-color:#ffffff">Call</a>
+      <a href="#book" onClick="{{ nav.book }}" tabIndex="{{ ui.barTab }}" style="flex:1; height:48px; border-radius:999px; background-color:#fff; color:#1a1f2a; display:flex; align-items:center; justify-content:center; gap:10px; font-size:15px; font-weight:600; transition:background-color .3s ease" style-hover="background-color:#eef0f4">Book a treatment <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;onlineBooking&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Booking&quot;},&quot;stickyBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Booking&quot;},&quot;logoSheen&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  TREAT = [
+    { id: 'nails', key: 't1', name: 'Nails', short: 'nails' },
+    { id: 'waxing', key: 't2', name: 'Advanced waxing', short: 'waxing' },
+    { id: 'facials', key: 't3', name: 'Facials', short: 'facial' },
+    { id: 'browlash', key: 't4', name: 'Brow & lash treatments', short: 'brow and lash' },
+    { id: 'tans', key: 't5', name: 'Spray tans', short: 'spray tan' },
+    { id: 'caci', key: 't6', name: 'CACI Facials', short: 'CACI facial' }
+  ];
+  // Minutes from midnight, Sunday = 0. Taken from a public directory listing; confirm with the salon.
+  HOURS = { 0: null, 1: null, 2: null, 3: [570, 1200], 4: [690, 1200], 5: [570, 1020], 6: [600, 960] };
+  DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  MONL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  EASE = 'cubic-bezier(0.16, 1, 0.3, 1)';
+  state = {
+    scrolled: false, headerHidden: false, pastLogo: false, menuOpen: false, barShown: false,
+    openT: 't1', step: 1, treatment: null, dayKey: null, slot: null,
+    form: { name: '', phone: '', email: '', notes: '', first: false },
+    touched: {}, submitted: false, sending: false, done: false, now: Date.now()
+  };
+  rootRef = React.createRef();
+  glintRef = React.createRef();
+  marqueeRef = React.createRef();
+  bookCardRef = React.createRef();
+  countRef = React.createRef();
+
+  componentDidMount() {
+    this.reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    const root = this.rootRef.current;
+    if (root && !this.reduced) { this.setupIntro(root); this.setupReveals(root); this.setupCount(); }
+    if (root) this.px = Array.from(root.querySelectorAll('[data-parallax]')).map(el => ({ el, f: parseFloat(el.getAttribute('data-parallax')) || 0.1 }));
+    this.startAmbient();
+    this.onScroll = () => { if (this.ticking) return; this.ticking = true; requestAnimationFrame(() => { this.ticking = false; this.handleScroll(); }); };
+    this.onKey = e => { if (e.key === 'Escape' && this.state.menuOpen) this.toggleMenu(false); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    window.addEventListener('keydown', this.onKey);
+    this.handleScroll();
+    this.clock = setInterval(() => this.setState({ now: Date.now() }), 60000);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+    window.removeEventListener('keydown', this.onKey);
+    clearInterval(this.clock); clearTimeout(this.advT); clearTimeout(this.sendT);
+    if (this.io) this.io.disconnect();
+    if (this.cio) this.cio.disconnect();
+    (this.ambient || []).forEach(a => a.cancel());
+    document.body.style.overflow = '';
+  }
+
+  componentDidUpdate() {
+    const s = this.state, card = this.bookCardRef.current;
+    const ps = { step: this._lastStep == null ? s.step : this._lastStep, done: this._lastDone == null ? s.done : this._lastDone };
+    this._lastStep = s.step; this._lastDone = s.done;
+    if (card && this._prevH != null) {
+      const from = this._prevH; this._prevH = null;
+      const to = card.getBoundingClientRect().height;
+      if (!this.reduced && Math.abs(to - from) > 2) {
+        card.style.overflow = 'hidden';
+        const a = card.animate([{ height: from + 'px' }, { height: to + 'px' }], { duration: 650, easing: this.EASE });
+        const done = () => { card.style.overflow = ''; };
+        a.finished.then(done).catch(done);
+      }
+    }
+    if (card && (ps.step !== s.step || ps.done !== s.done)) {
+      const panel = card.querySelector('[data-step-panel]');
+      const dir = (s.done || s.step > ps.step) ? 1 : -1;
+      if (panel && !this.reduced) panel.animate([{ opacity: 0, transform: 'translate3d(' + (28 * dir) + 'px,0,0)' }, { opacity: 1, transform: 'translate3d(0,0,0)' }], { duration: 700, easing: this.EASE });
+      if (s.done && !ps.done && !this.reduced) {
+        const pop = card.querySelector('[data-pop]');
+        if (pop) pop.animate([{ opacity: 0, transform: 'translate3d(0,-18px,0) scale(.7)' }, { opacity: 1, transform: 'translate3d(0,0,0) scale(1)' }], { duration: 950, delay: 120, easing: 'cubic-bezier(.34,1.56,.64,1)', fill: 'backwards' });
+      }
+      const r = card.getBoundingClientRect();
+      if (r.top < 0) window.scrollTo({ top: window.scrollY + r.top - 20, behavior: this.reduced ? 'auto' : 'smooth' });
+    }
+    if (this.glintRef.current && this.glintRef.current !== this._glintEl) this.startGlint();
+  }
+
+  setupIntro(root) {
+    const E = this.EASE;
+    const K = {
+      mark: [[{ opacity: 0, transform: 'translate3d(0,24px,0) scale(.94)', clipPath: 'inset(100% 0 0 0)' }, { opacity: 1, transform: 'translate3d(0,0,0) scale(1)', clipPath: 'inset(0% 0 0 0)' }], 1700],
+      line: [[{ transform: 'translate3d(0,108%,0)' }, { transform: 'translate3d(0,0,0)' }], 1400],
+      rise: [[{ opacity: 0, transform: 'translate3d(0,24px,0)' }, { opacity: 1, transform: 'translate3d(0,0,0)' }], 1200],
+      fade: [[{ opacity: 0 }, { opacity: 1 }], 1400]
+    };
+    root.querySelectorAll('[data-intro]').forEach(el => {
+      const k = K[el.getAttribute('data-intro')] || K.fade;
+      const a = el.animate(k[0], { duration: k[1], delay: parseFloat(el.getAttribute('data-delay')) || 0, easing: E, fill: 'both' });
+      a.finished.then(() => a.cancel()).catch(() => {});
+    });
+  }
+
+  setupReveals(root) {
+    if (!('IntersectionObserver' in window)) return;
+    const K = {
+      up: [[{ opacity: 0, transform: 'translate3d(0,32px,0)' }, { opacity: 1, transform: 'translate3d(0,0,0)' }], 1100],
+      wipe: [[{ opacity: 0, transform: 'translate3d(0,28%,0)', clipPath: 'inset(100% 0 0 0)' }, { opacity: 1, transform: 'translate3d(0,0,0)', clipPath: 'inset(0% 0 0 0)' }], 1300],
+      img: [[{ clipPath: 'inset(14% 0 14% 0)', transform: 'scale(1.04)' }, { clipPath: 'inset(0% 0 0% 0)', transform: 'scale(1)' }], 1600]
+    };
+    const anims = new Map();
+    root.querySelectorAll('[data-reveal]').forEach(el => {
+      const k = K[el.getAttribute('data-reveal')] || K.up;
+      const a = el.animate(k[0], { duration: k[1], delay: parseFloat(el.getAttribute('data-delay')) || 0, easing: this.EASE, fill: 'both' });
+      a.pause(); a.currentTime = 0;
+      anims.set(el, a);
+    });
+    this.io = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (!en.isIntersecting) return;
+        this.io.unobserve(en.target);
+        const a = anims.get(en.target);
+        if (a) { a.play(); a.finished.then(() => a.cancel()).catch(() => {}); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.01 });
+    anims.forEach((a, el) => this.io.observe(el));
+  }
+
+  setupCount() {
+    const el = this.countRef.current;
+    if (!el || !('IntersectionObserver' in window)) return;
+    const node = el.firstChild;
+    if (!node || node.nodeType !== 3) return;
+    const target = parseInt(node.nodeValue, 10) || 20;
+    node.nodeValue = '0';
+    this.cio = new IntersectionObserver(es => {
+      if (!es.some(e => e.isIntersecting)) return;
+      this.cio.disconnect();
+      const t0 = performance.now(), dur = 1700;
+      const tick = t => { const p = Math.min(1, (t - t0) / dur); node.nodeValue = String(Math.round(target * (1 - Math.pow(1 - p, 4)))); if (p < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    }, { threshold: 0.5 });
+    this.cio.observe(el);
+  }
+
+  startAmbient() {
+    this.ambient = this.ambient || [];
+    if (this.reduced) return;
+    const m = this.marqueeRef.current;
+    if (m) this.ambient.push(m.animate([{ transform: 'translate3d(0,0,0)' }, { transform: 'translate3d(-25%,0,0)' }], { duration: 42000, iterations: Infinity }));
+    this.startGlint();
+  }
+
+  startGlint() {
+    const g = this.glintRef.current;
+    this._glintEl = g;
+    if (!g || this.reduced) return;
+    this.ambient = this.ambient || [];
+    this.ambient.push(g.animate([
+      { backgroundPosition: '150% 0', easing: 'cubic-bezier(.45,0,.2,1)' },
+      { backgroundPosition: '-50% 0', offset: 0.3 },
+      { backgroundPosition: '-50% 0' }
+    ], { duration: 8000, delay: 2300, iterations: Infinity }));
+  }
+
+  handleScroll() {
+    const y = window.scrollY || window.pageYOffset || 0, vh = window.innerHeight || 800;
+    const last = this.lastY == null ? y : this.lastY; this.lastY = y;
+    const s = this.state, next = {};
+    let hidden = s.headerHidden;
+    if (y < 120) hidden = false; else if (y > last + 6) hidden = true; else if (y < last - 6) hidden = false;
+    const root = this.rootRef.current, book = root && root.querySelector('#book');
+    const bookTop = book ? book.getBoundingClientRect().top : Infinity;
+    const vals = { scrolled: y > 24, headerHidden: hidden, pastLogo: y > vh * 0.36, barShown: y > vh * 0.8 && bookTop > vh * 0.9 };
+    Object.keys(vals).forEach(k => { if (vals[k] !== s[k]) next[k] = vals[k]; });
+    if (Object.keys(next).length) this.setState(next);
+    if (!this.reduced && this.px) {
+      this.px.forEach(p => {
+        const r = p.el.parentElement.getBoundingClientRect();
+        if (r.bottom < -200 || r.top > vh + 200) return;
+        p.el.style.transform = 'translate3d(0,' + (-((r.top + r.height / 2) - vh / 2) * p.f).toFixed(1) + 'px,0)';
+      });
+    }
+  }
+
+  toggleMenu(force) {
+    const open = typeof force === 'boolean' ? force : !this.state.menuOpen;
+    document.body.style.overflow = open ? 'hidden' : '';
+    this.setState({ menuOpen: open, headerHidden: false });
+  }
+
+  nav(id) {
+    return e => {
+      if (e && e.preventDefault) e.preventDefault();
+      const go = () => this.scrollToId(id);
+      if (this.state.menuOpen) { this.toggleMenu(false); setTimeout(go, 420); } else go();
+    };
+  }
+
+  scrollToId(id) {
+    const root = this.rootRef.current;
+    let top = 0;
+    if (id !== 'top' && root) { const el = root.querySelector('#' + id); if (el) top = el.getBoundingClientRect().top + window.scrollY; }
+    window.scrollTo({ top: Math.max(0, top), behavior: this.reduced ? 'auto' : 'smooth' });
+  }
+
+  scrollToCard() {
+    const c = this.bookCardRef.current;
+    if (!c) return this.scrollToId('book');
+    window.scrollTo({ top: c.getBoundingClientRect().top + window.scrollY - 20, behavior: this.reduced ? 'auto' : 'smooth' });
+  }
+
+  rand(str) {
+    let h = 2166136261;
+    for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return ((h >>> 0) % 1000) / 1000;
+  }
+
+  fmtTime(m, compact) {
+    const h = Math.floor(m / 60), mm = m % 60, h12 = ((h + 11) % 12) + 1, sfx = h < 12 ? 'am' : 'pm';
+    if (compact && mm === 0) return h12 + sfx;
+    return h12 + ':' + String(mm).padStart(2, '0') + sfx;
+  }
+
+  getDays() {
+    const now = new Date(this.state.now), nowM = now.getHours() * 60 + now.getMinutes();
+    const key = now.toDateString() + '|' + (this.state.treatment || '') + '|' + Math.floor(nowM / 30);
+    if (this._daysKey === key) return this._days;
+    const out = [];
+    for (let i = 0; i < 21; i++) {
+      const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() + i);
+      const dow = d.getDay(), hrs = this.HOURS[dow];
+      const dkey = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+      const slots = [];
+      if (hrs) {
+        for (let m = hrs[0]; m <= hrs[1] - 60; m += 30) {
+          if (i === 0 && m < nowM + 60) continue;
+          slots.push({ m, off: this.rand(dkey + ':' + m + ':' + (this.state.treatment || '')) < 0.3 });
+        }
+      }
+      out.push({ key: dkey, date: d, dow, i, closed: !hrs, full: !!hrs && !slots.some(x => !x.off), slots });
+    }
+    this._daysKey = key; this._days = out;
+    return out;
+  }
+
+  openStatus(now) {
+    const dow = now.getDay(), mins = now.getHours() * 60 + now.getMinutes(), h = this.HOURS[dow];
+    if (h && mins >= h[0] && mins < h[1]) return { open: true, text: 'Open now · until ' + this.fmtTime(h[1], true) };
+    if (h && mins < h[0]) return { open: false, text: 'Closed now · opens today at ' + this.fmtTime(h[0], true) };
+    for (let i = 1; i <= 7; i++) {
+      const d = (dow + i) % 7, hh = this.HOURS[d];
+      if (hh) return { open: false, text: 'Closed now · opens ' + (i === 1 ? 'tomorrow' : this.DAYS[d]) + ' at ' + this.fmtTime(hh[0], true) };
+    }
+    return { open: false, text: 'Closed now' };
+  }
+
+  pickTreatment(id) {
+    this.setState({ treatment: id, slot: null });
+    clearTimeout(this.advT);
+    this.advT = setTimeout(() => this.goStep(2), 420);
+  }
+
+  bookTreatment(e, id) {
+    if (e && e.preventDefault) e.preventDefault();
+    clearTimeout(this.advT);
+    this.setState({ treatment: id, slot: null, done: false, sending: false }, () => this.goStep(2));
+    setTimeout(() => this.scrollToCard(), 40);
+  }
+
+  captureCardH() {
+    const c = this.bookCardRef.current;
+    if (c) this._prevH = c.getBoundingClientRect().height;
+  }
+
+  goStep(n) {
+    this.captureCardH();
+    const next = { step: n, done: false };
+    if (n === 2) {
+      const days = this.getDays();
+      const ok = d => !d.closed && !d.full;
+      if (!days.find(d => d.key === this.state.dayKey && ok(d))) { const first = days.find(ok); next.dayKey = first ? first.key : null; next.slot = null; }
+    }
+    this.setState(next);
+  }
+
+  validate(f) {
+    const e = {}, digits = f.phone.replace(/\D/g, '');
+    if (f.name.trim().length < 2) e.name = 'Please enter your name.';
+    if (!digits) e.phone = 'Please enter your mobile number.';
+    else if (!/^(07\d{9}|447\d{9})$/.test(digits)) e.phone = 'Enter a UK mobile number, for example 07700 900123.';
+    if (f.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.trim())) e.email = 'Check your email address.';
+    return e;
+  }
+
+  setField(k, v) { this.setState(st => ({ form: Object.assign({}, st.form, { [k]: v }) })); }
+
+  touch(k) {
+    this.setState(st => {
+      const form = Object.assign({}, st.form);
+      if (k === 'phone') { const d = form.phone.replace(/\D/g, ''); if (/^07\d{9}$/.test(d)) form.phone = d.slice(0, 5) + ' ' + d.slice(5); }
+      return { touched: Object.assign({}, st.touched, { [k]: true }), form };
+    });
+  }
+
+  submit(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    if (this.state.sending) return;
+    const errs = this.validate(this.state.form);
+    if (Object.keys(errs).length) {
+      this.setState({ submitted: true }, () => {
+        const c = this.bookCardRef.current, el = c && c.querySelector('[aria-invalid="true"]');
+        if (el) el.focus();
+      });
+      return;
+    }
+    this.setState({ sending: true, submitted: true });
+    this.sendT = setTimeout(() => { this.captureCardH(); this.setState({ sending: false, done: true }); }, 1300);
+  }
+
+  resetBooking() {
+    this.captureCardH();
+    this.setState({ step: 1, done: false, treatment: null, dayKey: null, slot: null, form: { name: '', phone: '', email: '', notes: '', first: false }, touched: {}, submitted: false, sending: false });
+  }
+
+  downloadIcs() {
+    const s = this.state, t = this.TREAT.find(x => x.id === s.treatment);
+    if (!t || !s.dayKey || s.slot == null) return;
+    const p = n => String(n).padStart(2, '0');
+    const [y, mo, d] = s.dayKey.split('-').map(Number);
+    const start = new Date(y, mo - 1, d, Math.floor(s.slot / 60), s.slot % 60), end = new Date(start.getTime() + 3600000);
+    const f = dt => dt.getFullYear() + p(dt.getMonth() + 1) + p(dt.getDate()) + 'T' + p(dt.getHours()) + p(dt.getMinutes()) + '00';
+    const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Salena-Jos//Booking//EN', 'BEGIN:VEVENT', 'UID:' + Date.now() + '@salenajos', 'DTSTAMP:' + f(new Date()), 'DTSTART:' + f(start), 'DTEND:' + f(end), 'SUMMARY:' + t.name + " at Salena-Jo's (awaiting confirmation)", 'LOCATION:64 Ashby Road\\, Loughborough LE11 3AE', 'DESCRIPTION:Booking request sent. To change it call 01509 215678.', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+    a.download = 'salena-jos-appointment.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+
+  bookingVals() {
+    const s = this.state, sel = this.TREAT.find(t => t.id === s.treatment) || null;
+    const step = s.done ? 4 : s.step, days = this.getDays();
+    const day = days.find(d => d.key === s.dayKey) || null;
+    const dayShort = day ? this.DAYS[day.dow].slice(0, 3) + ' ' + day.date.getDate() + ' ' + this.MON[day.date.getMonth()] : '';
+    const dayLong = day ? this.DAYS[day.dow] + ' ' + day.date.getDate() + ' ' + this.MONL[day.date.getMonth()] : '';
+    const time = s.slot != null ? this.fmtTime(s.slot, true) : '';
+    const treatments = this.TREAT.map(t => {
+      const on = s.treatment === t.id;
+      return { name: t.name, selected: on, bd: on ? '#5a6475' : '#dfe2e8', shadow: on ? '0 0 0 1px #5a6475' : '0 0 0 0 rgba(90,100,117,0)', bg: on ? '#f1f3f6' : '#ffffff', ring: on ? '#5a6475' : '#b9bfca', dot: on ? 'scale(1)' : 'scale(0)', arrowOp: on ? 1 : 0, arrowTf: on ? 'translate3d(0,0,0)' : 'translate3d(-8px,0,0)', pick: () => this.pickTreatment(t.id) };
+    });
+    const dayVals = days.map(d => {
+      const on = s.dayKey === d.key, off = d.closed || d.full;
+      return {
+        wk: d.i === 0 ? 'Today' : this.DAYS[d.dow].slice(0, 3), num: d.date.getDate(), sub: d.closed ? 'Closed' : d.full ? 'Full' : this.MON[d.date.getMonth()],
+        off, selected: on, bg: on ? '#5a6475' : '#ffffff', fg: on ? '#ffffff' : '#1a1f2a', bd: on ? '#5a6475' : '#dfe2e8', op: off ? 0.4 : 1, cursor: off ? 'not-allowed' : 'pointer',
+        aria: this.DAYS[d.dow] + ' ' + d.date.getDate() + ' ' + this.MONL[d.date.getMonth()] + (d.closed ? ', closed' : d.full ? ', fully booked' : ''),
+        pick: () => { if (!off) this.setState({ dayKey: d.key, slot: null }); }
+      };
+    });
+    const groups = [];
+    if (day && !day.closed) {
+      [['Morning', m => m < 720], ['Afternoon', m => m >= 720 && m < 1020], ['Evening', m => m >= 1020]].forEach(([label, test]) => {
+        const sl = day.slots.filter(x => test(x.m));
+        if (!sl.length) return;
+        groups.push({ label, slots: sl.map(x => {
+          const on = s.slot === x.m;
+          return { label: this.fmtTime(x.m), off: x.off, selected: on, bg: on ? '#5a6475' : '#ffffff', fg: on ? '#ffffff' : (x.off ? '#a3abb9' : '#1a1f2a'), bd: on ? '#5a6475' : (x.off ? '#eceef2' : '#dfe2e8'), deco: x.off ? 'line-through' : 'none', cursor: x.off ? 'not-allowed' : 'pointer', pick: () => { if (!x.off) this.setState({ slot: x.m }); } };
+        }) });
+      });
+    }
+    const can2 = !!(day && s.slot != null);
+    const first = s.form.name.trim().split(/\s+/)[0] || '';
+    return {
+      showProgress: !s.done, stepLabel: 'Step ' + Math.min(step, 3) + ' of 3', stepName: ['Treatment', 'Day & time', 'Your details'][Math.min(step, 3) - 1],
+      p1: 'scaleX(1)', p2: step >= 2 ? 'scaleX(1)' : 'scaleX(0)', p3: step >= 3 ? 'scaleX(1)' : 'scaleX(0)',
+      is1: !s.done && s.step === 1, is2: !s.done && s.step === 2, is3: !s.done && s.step === 3, isDone: s.done,
+      treatments, days: dayVals, groups, dayLong, selName: sel ? sel.name : '', sumWhen: day && time ? dayShort + ', ' + time : '',
+      no2: !can2, op2: can2 ? 1 : 0.35, cur2: can2 ? 'pointer' : 'not-allowed', cta2: can2 ? 'Continue' : 'Select a time',
+      edit1: () => this.goStep(1), edit2: () => this.goStep(2), back1: () => this.goStep(1), back2: () => this.goStep(2),
+      next2: () => { if (can2) this.goStep(3); },
+      doneText: sel ? 'Thanks' + (first ? ', ' + first : '') + '. We’ll text ' + s.form.phone + ' to confirm your ' + sel.short + ' appointment on ' + dayLong + ' at ' + time + '.' : '',
+      ics: () => this.downloadIcs(), reset: () => this.resetBooking()
+    };
+  }
+
+  formVals() {
+    const s = this.state, errs = this.validate(s.form);
+    const show = k => !!((s.touched[k] || s.submitted) && errs[k]);
+    const bd = k => show(k) ? '#a8404a' : '#d5d9e0';
+    return {
+      name: s.form.name, phone: s.form.phone, email: s.form.email, notes: s.form.notes, first: s.form.first,
+      errName: show('name'), msgName: errs.name || '', bdName: bd('name'),
+      errPhone: show('phone'), msgPhone: errs.phone || '', bdPhone: bd('phone'),
+      errEmail: show('email'), msgEmail: errs.email || '', bdEmail: bd('email'),
+      onName: e => this.setField('name', e.target.value), blurName: () => this.touch('name'),
+      onPhone: e => this.setField('phone', e.target.value), blurPhone: () => this.touch('phone'),
+      onEmail: e => this.setField('email', e.target.value), blurEmail: () => this.touch('email'),
+      onNotes: e => this.setField('notes', e.target.value),
+      onFirst: e => this.setField('first', e.target.checked),
+      firstBg: s.form.first ? '#5a6475' : '#ffffff', firstBd: s.form.first ? '#5a6475' : '#b9bfca', tickTf: s.form.first ? 'rotate(-45deg) scale(1)' : 'rotate(-45deg) scale(0)',
+      patch: s.treatment === 'browlash',
+      sending: s.sending, submitLabel: s.sending ? 'Sending request…' : 'Send booking request',
+      submit: e => this.submit(e)
+    };
+  }
+
+  renderVals() {
+    const s = this.state, E = 'cubic-bezier(.16,1,.3,1)';
+    const bar = (this.props.stickyBar ?? true) && s.barShown && !s.menuOpen;
+    const showLogo = s.pastLogo || s.menuOpen;
+    const ui = {
+      headerTf: s.headerHidden && !s.menuOpen ? 'translate3d(0,-110%,0)' : 'translate3d(0,0,0)',
+      headerBg: s.menuOpen ? 'rgba(49,56,70,0)' : (s.scrolled ? 'rgba(90,100,117,.9)' : 'rgba(90,100,117,0)'),
+      headerShadow: s.scrolled && !s.menuOpen ? 'inset 0 -1px 0 rgba(255,255,255,.1)' : 'inset 0 -1px 0 rgba(255,255,255,0)',
+      logoOp: showLogo ? 1 : 0, logoTf: showLogo ? 'translate3d(0,0,0)' : 'translate3d(0,6px,0)',
+      menuOpen: s.menuOpen, menuLabel: s.menuOpen ? 'Close menu' : 'Open menu', menuHidden: !s.menuOpen, menuTab: s.menuOpen ? 0 : -1,
+      burgerA: s.menuOpen ? 'rotate(45deg)' : 'translate3d(0,-4px,0)', burgerB: s.menuOpen ? 'rotate(-45deg)' : 'translate3d(0,4px,0)',
+      menuClip: s.menuOpen ? 'inset(0 0 0% 0)' : 'inset(0 0 100% 0)',
+      barTf: bar ? 'translate3d(0,0,0)' : 'translate3d(0,140%,0)', barOp: bar ? 1 : 0, barTab: bar ? 0 : -1
+    };
+    for (let i = 1; i <= 5; i++) {
+      const d = (0.3 + i * 0.07).toFixed(2) + 's';
+      ui['mi' + i] = s.menuOpen
+        ? { op: 1, tf: 'translate3d(0,0,0)', tr: 'opacity .7s ease ' + d + ', transform 1s ' + E + ' ' + d }
+        : { op: 0, tf: 'translate3d(0,40px,0)', tr: 'opacity .25s ease, transform .4s ease' };
+    }
+    const acc = {};
+    this.TREAT.forEach(t => {
+      const open = s.openT === t.key;
+      acc[t.key] = {
+        open, rows: open ? '1fr' : '0fr', op: open ? 1 : 0, tf: open ? 'translate3d(0,0,0)' : 'translate3d(0,-10px,0)',
+        ring: open ? '#5a6475' : '#c3c8d1', bg: open ? '#5a6475' : 'rgba(90,100,117,0)', fg: open ? '#ffffff' : '#1a1f2a', rot: open ? 'rotate(0deg)' : 'rotate(90deg)',
+        toggle: () => this.setState(st => ({ openT: st.openT === t.key ? null : t.key })),
+        book: e => this.bookTreatment(e, t.id)
+      };
+    });
+    const now = new Date(s.now), st = this.openStatus(now), dow = now.getDay();
+    const hours = [1, 2, 3, 4, 5, 6, 0].map(d => {
+      const h = this.HOURS[d], today = d === dow;
+      return { day: this.DAYS[d], time: h ? this.fmtTime(h[0], true) + ' – ' + this.fmtTime(h[1], true) : 'Closed', weight: today ? 600 : 400, color: today ? '#1a1f2a' : '#3d4452', dot: today ? '#5a6475' : 'rgba(90,100,117,0)' };
+    });
+    const spinner = React.createElement('span', {
+      ref: el => { if (el && !el._spin) el._spin = el.animate([{ transform: 'rotate(0deg)' }, { transform: 'rotate(360deg)' }], { duration: 800, iterations: Infinity }); },
+      style: { width: 18, height: 18, borderRadius: '50%', border: '2px solid rgba(255,255,255,.35)', borderTopColor: '#fff', display: 'inline-block', flex: 'none' }
+    });
+    return {
+      rootRef: this.rootRef, glintRef: this.glintRef, marqueeRef: this.marqueeRef, bookCardRef: this.bookCardRef, countRef: this.countRef,
+      ui, acc, hours, spinner,
+      status: { text: st.text, dot: st.open ? '#4e9a6f' : '#a3abb9', halo: st.open ? '0 0 0 4px rgba(78,154,111,.18)' : '0 0 0 4px rgba(163,171,185,.22)' },
+      sheen: this.props.logoSheen ?? true,
+      showBooking: this.props.onlineBooking ?? true,
+      bk: this.bookingVals(), f: this.formVals(),
+      toggleMenu: () => this.toggleMenu(),
+      nav: { top: this.nav('top'), treatments: this.nav('treatments'), academy: this.nav('academy'), visit: this.nav('visit'), book: this.nav('book') }
+    };
+  }
+}
+</script>
+</body>
+</html>
